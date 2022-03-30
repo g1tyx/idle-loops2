@@ -39,7 +39,7 @@ p {
 	align-items: center;
 }
 
-#saveInput, #calculateButton, #VMWeightInput, #XPWeightInput, #HPWeightInput, #weaponLevelsInput, #dailyCritInput {
+#saveInput, #calculateButton, #VMWeightInput, #XPWeightInput, #HPWeightInput, #weaponLevelsInput, #dailyCritInput, #equalityTargetInput {
 	color: black;
 	border: 0.1rem solid black;
 	margin-bottom: -0.1rem;
@@ -85,6 +85,12 @@ p {
 
 #dailyCritInput {
 	margin-left: -0.5rem;
+}
+
+#equalityTargetInput {
+    font-size: 1.1rem;
+    width: 31.1rem;
+	height: 2.6rem;
 }
 
 .checkboxesContainer {
@@ -256,7 +262,7 @@ a:hover, a:active {
 .heirloomContainer {
 	display: flex;
 	flex-direction: column;
-	height: 33rem;
+	height: 37rem;
 	width: 39rem;
 	font-size: 1.8rem;
 	margin: 1rem;
@@ -384,7 +390,7 @@ a:hover, a:active {
 }
 
 .heirloomRare0 .heirloomMod:hover {
-	border: 0.2rem solid #888;
+	border-color: #888888;
 }
 
 .heirloomRare1 {
@@ -392,7 +398,7 @@ a:hover, a:active {
 }
 
 .heirloomRare1 .heirloomMod:hover {
-	border: 0.2rem solid #1f7e1f;
+	border-color: #1f7e1f;
 }
 
 .heirloomRare2 {
@@ -400,7 +406,7 @@ a:hover, a:active {
 }
 
 .heirloomRare2 .heirloomMod:hover {
-	border: 0.2rem solid #2b2bce;
+	border-color: #2b2bce;
 }
 
 .heirloomRare3 {
@@ -408,7 +414,7 @@ a:hover, a:active {
 }
 
 .heirloomRare3 .heirloomMod:hover {
-	border: 0.2rem solid #7e1f7e;
+	border-color: #7e1f7e;
 }
 
 .heirloomRare4 {
@@ -416,7 +422,7 @@ a:hover, a:active {
 }
 
 .heirloomRare4 .heirloomMod:hover {
-	border: 0.2rem solid #e2722e;
+	border-color: #e2722e;
 }
 
 .heirloomRare5 {
@@ -424,10 +430,10 @@ a:hover, a:active {
 }
 
 .heirloomRare5 .heirloomMod:hover {
-	border: 0.2rem solid #b92727;
+	border-color: #b92727;
 }
 
-.heirloomRare6{
+.heirloomRare6 {
 	color: #2693ff;
 	text-shadow:
 		-0.15rem -0.15rem 0.2rem #5000ba,  
@@ -440,7 +446,7 @@ a:hover, a:active {
 }
 
 .heirloomRare6 .heirloomMod:hover {
-	border: 0.2rem solid #2693ff;
+	border-color: #2693ff;
 }
 
 .heirloomRare6 .heirloomMod {
@@ -466,10 +472,10 @@ a:hover, a:active {
 }
 
 .heirloomRare7 .heirloomMod:hover, .heirloomRare7Anim .heirloomMod:hover {
-	border: 0.2rem solid #8c0000;
+	border-color: #8c0000;
 }
 
-.heirloomRare7 .heirloomMod {
+.heirloomRare7 .heirloomMod, .heirloomRare7Anim .heirloomMod {
 	background-color: initial;
 }
 
@@ -491,11 +497,7 @@ a:hover, a:active {
 }
 
 .heirloomRare8 .heirloomMod:hover, .heirloomRare8Anim .heirloomMod:hover {
-	border: 0.2rem solid #0e5a07;
-}
-
-.heirloomRare8 .heirloomMod {
-	background-color: initial;
+	border-color: #0e5a07;
 }
 
 .heirloomRare9, .heirloomRare9Anim {
@@ -516,11 +518,7 @@ a:hover, a:active {
 }
 
 .heirloomRare9 .heirloomMod:hover, .heirloomRare9Anim .heirloomMod:hover {
-	border: 0.2rem solid #15025a;
-}
-
-.heirloomRare9 .heirloomMod {
-	background-color: initial;
+	border-color: #15025a;
 }
 
 .heirloomRare10, .heirloomRare10Anim {
@@ -540,20 +538,41 @@ a:hover, a:active {
 		-0.5rem -0.5rem 1.4rem black;
 }
 
-.heirloomRare10 .heirloomIconContainer {
-	color: #ffa229;
-}
-
 .heirloomRare10Anim .heirloomIconContainer {
-	color: #ffa229;
 	animation: heirloomRare10Animated 6s infinite;
 }
 
 .heirloomRare10 .heirloomMod:hover, .heirloomRare10Anim .heirloomMod:hover {
-	border: 0.2rem solid #ffa229;
+	border-color: #ffa229;
 }
 
-.heirloomRare10 .heirloomMod {
+.heirloomRare11, .heirloomRare11Anim {
+    color: #1989d4;
+	text-shadow:
+		0.05rem 0.05rem 0.05rem #050c49,
+		-0.05rem 0.05rem 0.05rem #050c49,
+		0.05rem -0.05rem 0.05rem #050c49,
+		-0.05rem -0.05rem 0.05rem #050c49,
+		0.15rem 0.15rem 0.15rem #5f0468,
+		-0.15rem 0.15rem 0.15rem #5f0468,
+		0.15rem -0.15rem 0.15rem #5f0468,
+		-0.15rem -0.15rem 0.15rem #5f0468,
+		0.5rem 0.5rem 1.4rem black, 
+		0.5rem -0.5rem 1.4rem black,
+		-0.5rem 0.5rem 1.4rem black,
+		-0.5rem -0.5rem 1.4rem black;
+	background: linear-gradient(15deg,  #000 0%, #050c49 25%, #000 50%, #af00bf 75%,#000b38 100%); 
+}
+
+.heirloomRare11Anim .heirloomIconContainer {
+	animation: heirloomRare11Animated 60s infinite;
+}
+
+.heirloomRare11 .heirloomMod:hover, .heirloomRare11Anim .heirloomMod:hover {
+	border-color: #1989d4;
+}
+
+.heirloomRare11 .heirloomMod, .heirloomRare11Anim .heirloomMod {
 	background-color: initial;
 }
 
@@ -740,6 +759,97 @@ a:hover, a:active {
 			0.5rem -0.5rem 1.4rem black,
 			-0.5rem 0.5rem 1.4rem black,
 			-0.5rem -0.5rem 1.4rem black;
+	}
+}
+
+@keyframes heirRare11Animated{
+	0% {
+		text-shadow:
+			0.05rem 0.05rem 0.05rem #abd6da,
+			-0.05rem 0.05rem 0.05rem #abd6da,
+			0.05rem -0.05rem 0.05rem #abd6da,
+			-0.05rem -0.05rem 0.05rem #abd6da, 
+			0.15rem 0.15rem 0.15rem #abd6da,
+			-0.15rem 0.15rem 0.15rem #abd6da,
+			0.15rem -0.15rem 0.15rem #abd6da,
+			-0.15rem -0.15rem 0.15rem #abd6da,
+			0.5rem 0.5rem 1.4rem black,
+			0.5rem -0.5rem 1.4rem black,
+			-0.5rem 0.5rem 1.4rem black,
+			-0.5rem -0.5rem 1.4rem black;
+	}
+	20% {
+		text-shadow:
+		0.05rem 0.05rem 0.05rem #af00bf,
+		-0.05rem 0.05rem 0.05rem #af00bf,
+		0.05rem -0.05rem 0.05rem #af00bf,
+		-0.05rem -0.05rem 0.05rem #af00bf,
+		0.15rem 0.15rem 0.15rem #af00bf,
+		-0.15rem 0.15rem 0.15rem #af00bf,
+		0.15rem -0.15rem 0.15rem #af00bf,
+		-0.15rem -0.15rem 0.15rem #af00bf,
+		0.5rem 0.5rem 1.4rem black,
+		0.5rem -0.5rem 1.4rem black,
+		-0.5rem 0.5rem 1.4rem black,
+		-0.5rem -0.5rem 1.4rem black;
+	}
+	40% {
+		text-shadow:
+		0.05rem 0.05rem 0.05rem #af00bf, 
+		-0.05rem 0.05rem 0.05rem #af00bf,
+		0.05rem -0.05rem 0.05rem #af00bf,
+		-0.05rem -0.05rem 0.05rem #af00bf,
+		0.15rem 0.15rem 0.15rem #091374,
+		-0.15rem 0.15rem 0.15rem #091374,
+		0.15rem -0.15rem 0.15rem #091374,
+		-0.15rem -0.15rem 0.15rem #091374,
+		0.5rem 0.5rem 1.4rem black,
+		0.5rem -0.5rem 1.4rem black,
+		-0.5rem 0.5rem 1.4rem black,
+		-0.5rem -0.5rem 1.4rem black;
+	}
+	60% {
+		text-shadow:
+		0.05rem 0.05rem 0.05rem #091374,
+		-0.05rem 0.05rem 0.05rem #091374,
+		0.05rem -0.05rem 0.05rem #091374,
+		-0.05rem -0.05rem 0.05rem #091374,
+		0.15rem 0.15rem 0.15rem #af00bf,
+		-0.15rem 0.15rem 0.15rem #af00bf,
+		0.15rem -0.15rem 0.15rem #af00bf,
+		-0.15rem -0.15rem 0.15rem #af00bf,
+		0.5rem 0.5rem 1.4rem black,
+		0.5rem -0.5rem 1.4rem black,
+		-0.5rem 0.5rem 1.4rem black,
+		-0.5rem -0.5rem 1.4rem black;
+	}
+	80% {
+		text-shadow: 0.05rem 0.05rem 0.05rem #091374,
+		-0.05rem 0.05rem 0.05rem #091374,
+		0.05rem -0.05rem 0.05rem #091374,
+		-0.05rem -0.05rem 0.05rem #091374,
+		0.15rem 0.15rem 0.15rem #091374,
+		-0.15rem 0.15rem 0.15rem #091374,
+		0.15rem -0.15rem 0.15rem #091374,
+		-0.15rem -0.15rem 0.15rem #091374,
+		0.5rem 0.5rem 1.4rem black,
+		0.5rem -0.5rem 1.4rem black,
+		-0.5rem 0.5rem 1.4rem black,
+		-0.5rem -0.5rem 1.4rem black;
+	}
+	100% {
+		text-shadow: 0.05rem 0.05rem 0.05rem #abd6da,
+		-0.05rem 0.05rem 0.05rem #abd6da,
+		0.05rem -0.05rem 0.05rem #abd6da,
+		-0.05rem -0.05rem 0.05rem #abd6da,
+		0.15rem 0.15rem 0.15rem #abd6da,
+		-0.15rem 0.15rem 0.15rem #abd6da,
+		0.15rem -0.15rem 0.15rem #abd6da,
+		-0.15rem -0.15rem 0.15rem #abd6da,
+		0.5rem 0.5rem 1.4rem black,
+		0.5rem -0.5rem 1.4rem black,
+		-0.5rem 0.5rem 1.4rem black,
+		-0.5rem -0.5rem 1.4rem black;
 	}
 }
 
