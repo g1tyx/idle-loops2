@@ -1,0 +1,1666 @@
+<?xml version="1.0"?>
+<body>
+    <menu>
+        <changelog>
+            <meta>
+                <title>更新日志</title>
+                <version_prefix>版本</version_prefix>
+            </meta>
+            <version verNum=".93"><![CDATA[
+            <b> April 29th, 2019 - The current date</b>
+            <b> v0.93 - "Diminishing returns."</b><br>
+            • Team member gold cost and cost increase from 200 > 100 per.<br>
+            • Travel actions in the next action list now have multicolored backgrounds where the top half is the zone they're in, and the bottom half is the zone they bring you to.<br>
+            • Options are now all saved.<br>
+            • Manually set buff caps are now saved.<br>
+            • Fixed Mason and Architect not updating their exp gains in their tooltips properly upon completion.<br>
+            • Fixed odd behavior on failed actions in edge cases.<br>
+            • Fixed buffs improperly visually appearing and disappearing.<br>
+            • Fixed buff hard caps not working.
+        ]]></version>
+            <version verNum=".92"><![CDATA[
+            <b> April 29th, 2019 - The current date</b>
+            <b> v0.92 - "For your eyes."</b><br>
+            • Added Themes. You can find these under a dropdown in the options menu. Currently there are 3 themes: Normal, Dark, and Cubic.<br>
+            • Actions in the next action list now have backgrounds depending on the zone the action is from.<br>
+            • Added a disable action button next to the remove action button. (this ignores the action when creating your current action list on restart)<br>
+            • Added a visual indicator for actions with 0 loops, that indicates they will be ignored when creating your current action list on restart.<br>
+            • Increased the horizontal size of actions on the next action list.<br>
+            • Action list buttons now hide when you begin to drag an action, and reappear when you finish the drag.<br>
+            • Adjusted the next action list buttons for consistency.<br>
+            • Reduced the space between the "x" and the loop count for actions on the current action bar.<br>
+            • Made the loop count for actions on the current action bar apply the same number formatting as actions on the next action list.<br>
+            • When you have the max allowed amount of an action on your list, it will now show with a red tinted background, distinguishing it from locked actions.<br>
+            • Buffs now display under the buff section upon unlocking them, rather than obtaining them at least once.<br>
+            • Adjusted the buff displays, to be more consistent with stats and skills.<br>
+            • Notable performance improvements, especially in edge cases.<br>
+            • Added missing commas to the Small dungeon and Large Dungeon floor looted counts in their tooltips.<br>
+            • Abjusted the current actions mana used display to allow space for larger numbers, and improved formatting.<br>
+            • Changed the 自身战斗 and 团队战斗 tooltips to mention guild multiplier instead of guild rank, for clarity.<br>
+            • Replaced references to "combined skill" with "combined Combat and 魔法技能", for clarity.<br>
+            • Replaced references to "rank bonus" with "guild multiplier", for clarity.<br>
+            • Added an additional decimal point of precision for time values of < 10 seconds.<br>
+            • Fixed action buttons not being properly vertically centered.<br>
+            • Fixed visual elements not correctly updating upon import.<br>
+            • Fixed various typos.<br>
+            • Fixed actions with gold costs not properly updating their gold remaining upon completion.<br>
+            • Fixed the seconds left in loop display not updating if you toggled bonus seconds on/off while paused.<br>
+            • Fixed missing spaces between the stat shortforms and the exp gains on the current action bar tooltips.<br>
+            • Fixed improper vertical spacing between buff/buff cap numbers.<br>
+            • Fixed export to Stopsign not correctly removing new actions from the current action list.<br>
+            • Fixed loadout names not correctly resetting when you wiped your save.
+        ]]></version>
+            <version verNum=".91"><![CDATA[
+            <b> April 2nd, 2019 - April 29th, 2019</b>
+            <b> v0.91 - "A storied future."</b><br>
+            • Added action stories. These are short stories for most actions. These were written by Jacmac from the Discord. As of now, there are 120 individual entries. These become visible when their corresponding action is unlocked, and readable when a certain listed requirement is fulfilled. (arrow to the right of "Action Options" to view them)<br>
+            • Changed bonus seconds gains from 80% > 100%, and drain from 3/s > 4/s. (this will result in a 5x speed multiplier, up from the previous 4x)<br>
+            • When the delta between the last update and the current time is too long, the game will now attempt to give you bonus seconds equal to it, rather than just skipping it.<br>
+            • Action tooltips now display skill exp gain (if applicable) above stat percentages.<br>
+            • Dark Ritual and Imbue Mind now take the remainder of soulstones after division from the stat with the most soulstones, rather than soul.<br>
+            • Changed Dark Ritual's unlock requirement from 90% 灌丛探索 to 50% Witch Knowledge to prevent confusion.<br>
+            • Changed the icons for Small Dungeon, Wild Mana, Looping Potion, and Buy Supplies to be consistent with other icons.<br>
+            • Supplies now shows as an icon in the resource list, to be consistent with other resources that are limited to 1.<br>
+            • Renamed Train Dex to Train Dexterity.<br>
+            • Added colons in various different places they were missing.<br>
+            • Minor performance improvements. (higher for those not using the radar chart)<br>
+            • Changes on patch notes are now preceded by • instead of *.<br>
+            • Modified the Throw Party and Old Shortcut tooltips for clarity.<br>
+            • Face Judgement now requires 100% 山峰探索.<br>
+            • Translations now fallback to english if there's no translated version of the text. This means that the French translation has been re-enabled, but do note that it's only a partial translation.<br>
+            • Slightly adjusted the spacing and location of buttons on the saving menu.<br>
+            • Added a button on the saving menu to export your save in a Stopsign compatible form.<br>
+            • Skill levels now have a comma after 999, and a suffix after 9999.<br>
+            • Scarce action tooltips now display their total checked below their total found, and have a semicolon preceding their found count.<br>
+            • Added a visual indicator for when you save a loadout.<br>
+            • Added hotkeys for changing the current zone, showing action options/stories, and undoing the most recent action list change.<br>
+            • Revamped the changelog tooltips to allow for a scrollbar.<br>
+            • Fixed various typos.<br>
+            • Fixed the spacing between the load and clear list buttons.<br>
+            • Fixed certain tooltips not closing if you moved your mouse downwards onto the tooltip too quickly.<br>
+            • Fixed tooltips on thick progress bars overlapping with the bars themselves.<br>
+            • Fixed commas not appearing on travel action mana costs.<br>
+            • Fixed level exp on skill tooltips being labeled as "Level".<br>
+            • Fixed certain tooltips not closing if you moved your mouse downwards onto the tooltip too quickly.<br>
+            • Fixed ping on pause not working properly with pause on failed loop.<br>
+            • Fixed mana/gold remaining displays on the action list sometimes being incorrect at high game speeds.<br>
+            • Fixed failed actions being able to spend mana for a single tick before failing.<br>
+            • Fixed soulstone count not updating if you sacrificed exactly the amount of soulstones you had in a specific stat.<br>
+            • Fixed improper margins between town info and action options/stories before everything in a town is unlocked.<br>
+            • Fixed improper progress gains on multi part actions in certain cases.<br>
+            • Fixed bonus seconds provding a speed boost for a tick after enabling them, even when you had none.<br>
+            • Fixed the radar chart breaking if you imported a save and then swapped to it.
+        ]]></version>
+            <version verNum=".90"><![CDATA[
+            <b> February 16th, 2019 - April 2nd, 2019</b>
+            <b> v0.90 - "Crumbs in the keyboard."</b><br>
+            • Added hotkeys. (found in the options menu, hover over the word "hotkeys" for a list)<br>
+            • The small bar that appears when you hover over an action on the current action list has been restyled to better fit the game.<br>
+            • Performance has been greatly to moderately increased depending on the situation.<br>
+            • You can now shift+click actions with caps to add them to your action list at their capped amount. (or hold shift and then drag them into the list)<br>
+            • Fixed mana remaining not visually updating upon reset.<br>
+            • Fixed loadout names sometimes not loading.<br>
+            • Fixed Gamble not showing its unlock requirement.
+        ]]></version>
+            <version verNum=".89"><![CDATA[
+            <b> February 7th, 2019 - February 16th, 2019</b>
+            <b> v0.89 - "Cobwebs in the corner."</b><br>
+            • Fixed the stat radar exp/talent bars all being stacked on top of one another<br>
+            • Added an input box in the options that allows you to adjust the update rate of the game. This shouldn't affect your rate of progress, but there's a chance it might have a very small effect. It will increase your performance when reduced below the default of 50.<br>
+            • Stat percentages on actions tooltips are now always listed in the same order as the stats on the left side of the screen.<br>
+            • Added a time spent display for actions in the current action list.<br>
+            • You can now drag actions directly from the action options into your loop.<br>
+            • Fixed ping on pause not working.<br>
+            • Fixed incorrect formulas on the Dark Magic/Chronomancy tooltips.<br>
+            • Fixed soulstone costing actions not updating their tooltip cost upon completion.<br>
+            • Fixed the progress bar on multi part actions being larger than other progress bars.<br>
+            • Added 30 humorous new monster names for Fight Monsters.
+        ]]></version>
+            <version verNum=".88"><![CDATA[
+            <b> January 29th, 2019 - February 7th, 2019</b>
+            <b> v0.88 - "Almost spring cleaning."</b><br>
+            • Dark Ritual and Imbue Mind now have hard caps on the amount buffs you can get from them.<br>
+            • Dark Ritual and Imbue Mind now display their current soulstone cost on their respective action tooltips.<br>
+            • Reworked the buff display to allow for user limiting of the number of action completions for buff actions. The left number is your current amount, the right number is the amount you will stop being able to start the action at. You can change the right number, but you can not increase it past the hard cap.<br>
+            • Fixed a horizontal scrollbar appearing on the action list in certain cases.<br>
+            • There is now a fancy themed vertical scrollbar on the action list for browsers that support it. (Chrome, Safari, Opera, and a slightly worse looking one in Firefox)<br>
+            • Reworded reputation requirements on certain actions to prevent confusion.
+        ]]></version>
+            <version verNum=".87"><![CDATA[
+            <b> January 16th, 2019 - January 29th</b>
+            <b> v0.87 - "How about you name this one."</b><br>
+            • Fixed resource icons pushing page elements downwards when visible.<br>
+            • You can now name your loadouts by typing a name in the custom add amount box and then saving them. There is a 30 character max, and they can't only consist of numbers.<br>
+            • Versions now have dates and names in the patchnotes. <br>
+            • Patchnotes from the original version have been removed.
+        ]]></version>
+            <version verNum=".86"><![CDATA[
+            <b> December 6th, 2018 - January 16th, 2019</b>
+            <b> v0.86 - "Customization, confirmation, checkboxes."</b><br>
+            • Added a custom number input for the amount selections on the actions list.<br>
+            • Amounts on the actions list are now formatted at values > 999,999.<br>
+            • Formatted values now always have at least 3 digits of precision.<br>
+            • Added a checkbox to pause when a loop fails. (this will trigger if your loop ends before you reach the last action)<br>
+            • Added a confirmation when importing nothing, that warns you it will delete your save.
+        ]]></version>
+            <version verNum=".85"><![CDATA[
+            <b class="versiontitle"> November 7th, 2018 - December 6th, 2018</b>
+            <b class="versiontitle"> v0.85 - "This one isn't illusory."</b><br>
+            • New actions - Check Walls, Take Artifacts, Imbue Mind<br>
+            • Pyromancy mana cost 12000 > 14000.<br>
+            • Pyromancy 自身战斗 per level 10 > 5.<br>
+            • Start Trek now requires 60% 城市探索.<br>
+            • The Crafting Guild and Adventure Guild rank bonuses at Godlike have been decreased. (77x > 10x)<br>
+            • Chronomancy and Dark Magic now show their current bonus on their skill tooltips.<br>
+            • Added commas to certain numbers >= 1,000 but < 9,999.<br>
+            • Items that you can only get one of now display as icons always on the right side of your resources.<br>
+            • Fixed minor typos/grammatical errors.<br>
+            • Increased the icon size for actions by 4 pixels.<br>
+            • The French translation has been disabled as it is currently broken, and no longer supported.
+        ]]></version>
+            <version verNum=".84"><![CDATA[
+            <b> October 14th, 2018 - November 7th, 2018</b>
+            <b> v0.84 - "Stop going so fast."</b><br>
+            • Chronomancy speed bonus √(1 + level / 200) > (1 + level / 60) ^ 0.25.<br>
+            • Dark Magic mana gain bonus (1 + level / 100) > (1 + level / 60) ^ 0.25.<br>
+            • The action list height now saves on reload.<br>
+        ]]></version>
+            <version verNum=".83"><![CDATA[
+            <b> October 9th, 2018 - October 14th, 2018</b>
+            <b> v0.83 - "Bonus buttons."</b><br>
+            • Added an additional loadout slot.<br>
+            • Added 100/50 buttons to the amount selections on the actions list.<br>
+            • Added buttons to the top right of the actions list that allow you to adjust its vertical length.<br>
+            • When your loop ends during an action, your mana used that loop will now update properly.<br>
+            • Fixed various tooltips not overlapping certain elements.
+        ]]></version>
+            <version verNum=".82"><![CDATA[
+            <b> October 6th, 2018 - October 9th, 2018</b>
+            <b> v0.82 - "Please help I don't understand math."</b><br>
+            • New action - Face Judgement.<br>
+            • The talent multiplier formula has been changed to be worse at higher levels. (talent ^ 0.5 / 5) > (talent ^ 0.4 / 3)<br>
+            • Mine Soulstones mana cost 2500 > 5000.<br>
+            • Adjusted the placement of Pyromancy.<br>
+            • The currently selected loadout stays highlighted on refresh.<br>
+            • Fixed the mana cost reductions from Witch Knowledge and Runes Deciphered being applied improperly.<br>
+            • Fixed the Witch Knowledge Dark Ritual mana cost reduction not increasing the speed of the ritual to account for the reduced cost.
+        ]]></version>
+            <version verNum=".81"><![CDATA[
+            <b> October 3rd, 2018 - October 6th, 2018</b>
+            <b> v0.81 - "A new hobby."</b><br>
+            • New action - Bird Watching.<br>
+            • Fixed the speed bonuses Dark Ritual and Chronomancy draining bonus seconds faster.
+        ]]></version>
+            <version verNum=".80"><![CDATA[
+            <b> September 27th, 2018 - October 3rd, 2018</b>
+            <b> v0.80 - "The fine print."</b><br>
+            • New action - Looping Potion.<br>
+            • Dark Ritual now has bonuses for rituals 21-60, and a new unlimited per ritual bonus.<br>
+            • Chronomancy speed bonus √(1 + level / 100) > √(1 + level / 200).<br>
+            • The short forms of stat names have been capitalized.<br>
+            • Checkboxes have been vertically aligned.<br>
+            • Colons have been added to the end of resources with counts.<br>
+            • Fixed various minor bugs.
+        ]]></version>
+            <version verNum=".79"><![CDATA[
+            <b> September 20th, 2018 - September 27th, 2018</b>
+            <b> v0.79 - "Flowers and fire and trolls, oh my!"</b><br>
+            • Descriptions, flavor text, and tooltips have been changed in various places.<br>
+            • New actions - Follow Flowers, Mine Soulstones, Pyromancy, Hunt Trolls<br>
+            • Dark Ritual exp bonus 2000% -> 1000%<br>
+            • Dark Magic now reduces your reputation by 1 per completion.<br>
+            • Dark Ritual reputation requirement 0 or less -> -5 or less<br>
+            • Clear Thicket unlock 60% 森林探索.-> 20% 花朵循迹进度<br>
+            • Clear Thicket mana cost 300 -> 500<br>
+            • Explore Cavern no longer requires the pickaxe.<br>
+            • The font size on actions has been reduced by 1 pixel.
+        ]]></version>
+            <version verNum=".78"><![CDATA[
+            <b> August 18th, 2018 - September 20th, 2018</b>
+            <b> v0.78 - "Is it just me or is it getting evil in here?"</b><br>
+            • New actions - Clear Thicket, Talk to Witch, Dark Magic, Dark Ritual, Buy Pickaxe<br>
+            • Removed actions - Tournament<br>
+            • New zone - Mt. Olympus<br>
+            • Changed the colors for soul and charisma<br>
+            • Old Shortcut mana cost 1200 -> 800<br>
+            • Talk to Hermit mana cost 2000 -> 1200
+        ]]></version>
+        </changelog>
+        <save>
+            <meta>
+                <title>保存</title>
+            </meta>
+            <manual_save>手动保存</manual_save>
+            <export_list>Export Current List</export_list>
+            <import_list>Import List to Current</import_list>
+            <list_label>导出/导入列表</list_label>
+            <list_comment>Export's the current list in a plain-text format you can paste and share with others</list_comment>
+            <input_label>导出/导入保存文件</input_label>
+            <export_button>导出</export_button>
+            <export_button_old>Export To Stopsign</export_button_old>
+            <export_comment><![CDATA[点击导出按钮，导出到你的存档到剪贴板(然后按 ctrl - v，粘贴保存到其他地方)。<br>
+              粘贴一个存档到框里，并单击导入以导入存档。]]></export_comment>
+            <import_button>导入</import_button>
+            <import_comment><![CDATA[
+              警告:如果存档无效，强行导入将破坏游戏。空导入将很难清除游戏存档<br>
+              如果你真的想编辑你的存档文件, ]]></import_comment>
+            <import_hover_special>鼠标悬浮我</import_hover_special>
+            <import_hover_special_tooltip>
+                <![CDATA[在控制台中,使用decode("这里粘贴你的存档"),编辑,然后encode('这里粘贴你的存档'), 然后导入存档到游戏<br>这主要是为了修复损坏的保存文件——不要作弊。]]></import_hover_special_tooltip>
+        </save>
+        <faq>
+            <meta>
+                <title>常见问题</title>
+                <q_prefix><![CDATA[<b>问:</b>]]></q_prefix>
+                <a_prefix><![CDATA[<b>答:</b>]]></a_prefix>
+            </meta>
+            <q_a>
+                <q>What do stats do?</q>
+                <a>Hover over "Stats" for how they work. What stats are important depend on what actions you need that
+                    uses them.
+                </a>
+            </q_a>
+            <q_a>
+                <q>Short runs seem better.</q>
+                <a>Short runs are better, for the early game and current balance. But as your runs get longer and you accrue
+                    talent and soulstones, longer runs become more useful.
+                </a>
+            </q_a>
+            <q_a>
+                <q>What should my first goal be?</q>
+                <a>Start with wandering until you have ways of getting mana back. Then try to find how to get some
+                    warrior lessions to give yourself a permanent boost, and then try fighting monsters!
+                </a>
+            </q_a>
+        </faq>
+        <options>
+            <meta>
+                <title>选项</title>
+            </meta>
+            <localization_title>切换语言</localization_title>
+            <theme_title>主题</theme_title>
+            <theme>
+                <normal>默认主题</normal>
+            </theme>
+            <theme>
+                <dark>暗黑主题</dark>
+            </theme>
+            <theme>
+                <cubic>立体主题</cubic>
+            </theme>
+            <!--changed discord link for analytical reasons-->
+            <discord>
+                <link>https://discord.gg/dnKA6Xd</link>
+                <title>Discord Link</title>
+            </discord>
+            <adblock_warning>警告：由于某些原因，Adblock Plus会导致大量延迟。 我不会有广告，如果你的游戏经常卡死，请把本页面列到白名单。
+            </adblock_warning>
+            <pause_audio_cue>暂停时Ping</pause_audio_cue>
+            <hotkeys>热键</hotkeys>
+            <hotkeys_tooltip><![CDATA[
+                空格键: 暂停/继续<br>
+                R: 复位<br>
+                B: 切换奖励秒数<br>
+                1-5: 选择列表 1-5<br>
+                Shift+1-5: 选择并读取列表 1-5<br>
+                +/-: 增加/减少 操作列表大小<br>
+                Shift+S: 保存当前列表到选定的列表<br>
+                Shift+L: 加载选定的列表<br>
+                Shift+C: 清除当前列表<br>
+                Right/D: 显示下一个区域<br>
+                Left/A: 显示上一个区域<br>
+                Shift+Right/D: 显示操作历史<br>
+                Shift+Left/A: 显示操作选项<br>
+                Shift+Z: 撤消对操作列表的最新更改
+        ]]></hotkeys_tooltip>
+            <update_rate>每秒更新:</update_rate>
+        </options>
+    </menu>
+    <tutorial><![CDATA[
+      教程:<br>
+      单击“漫步”操作，然后单击“开始”以开始游戏。<br>
+      漫步一会儿，然后粉碎罐子。<br>
+      观察数字变化，阅读所有提示文字。<br>
+      完成这个城镇，然后去下一个。<br><br>
+      Hey there, it looks like you're starting the game on omsi6.github.io.<br>
+      Before you start, you should know that this is a fanmade modification<br>
+      for the original game, located <a href="http://stopsign.github.io/idleLoops/">here</a>. You can import your save from the<br>
+      original, but if you import it back to the original, you'll lose any progress in features specific to this version.<br><br>
+      Thanks for playing, and have fun!<br><br>
+      ]]></tutorial>
+    <tracked_resources>
+        <reset_on_restart_txt>循环重启时重置。</reset_on_restart_txt>
+        <!--countable items with names and counts on the top bar-->
+        <resource no_reset_on_restart="true">
+            <title>法力:</title>
+            <id>timer</id>
+            <desc>你的主要资源。 你的法力值越高，你在复位前就能做的越多。</desc>
+        </resource>
+        <resource>
+            <title>黄金:</title>
+            <id>gold</id>
+            <desc>交易法力，或用于行动。</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>声誉:</title>
+            <id>reputation</id>
+            <desc>你对城里人的影响。</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>草药:</title>
+            <id>herbs</id>
+            <desc>你找到的有益植物</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>兽皮:</title>
+            <id>hide</id>
+            <desc>成功狩猎的结果。</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>药水:</title>
+            <id>potions</id>
+            <desc>很少见，但并不复杂。 值一些钱。</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>团队成员:</title>
+            <id>teamMembers</id>
+            <desc>你知道他们的个性和战斗风格。 他们不知道你的名字。</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>盔甲:</title>
+            <id>armor</id>
+            <desc>由你自己手工制作，它可以保护你免受危险。</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>血液:</title>
+            <id>blood</id>
+            <desc>因为它的再生特性而恢复。(目前没有任何效果)</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>史前古器物:</title>
+            <id>artifacts</id>
+            <desc>各种旧戒指、手镯、护身符和吊坠。你也许能为他们挣到一大笔钱。</desc>
+        </resource>
+        <!--singular items with img icons rather than counts-->
+        <resource initially_hidden="true" no_count="true">
+            <title><![CDATA[<img src="img/buyGlasses.svg" class="smallIcon">]]></title>
+            <id>glasses</id>
+            <desc>哇，树上有很多叶子。</desc>
+        </resource>
+        <resource initially_hidden="true" no_count="true">
+            <title><![CDATA[<img src="img/buySupplies.svg" class="smallIcon">]]></title>
+            <id>supplies</id>
+            <desc>需要去下一个城镇。</desc>
+        </resource>
+        <resource initially_hidden="true" no_count="true">
+            <title><![CDATA[<img src="img/buyPickaxe.svg" class="smallIcon">]]></title>
+            <id>pickaxe</id>
+            <desc>它很重，但你可以利用它。</desc>
+        </resource>
+        <resource initially_hidden="true" no_count="true">
+            <title><![CDATA[<img src="img/loopingPotion.svg" class="smallIcon">]]></title>
+            <id>loopingPotion</id>
+            <desc>这是一种用同样的配方制成的药水，把你弄得一团糟。你为什么要做这个？</desc>
+        </resource>
+    </tracked_resources>
+    <time_controls>
+        <play_button>开始</play_button>
+        <pause_button>暂停</pause_button>
+        <pause_before_restart>重启前暂停</pause_before_restart>
+        <pause_on_failed_loop>暂停失败的循环</pause_on_failed_loop>
+        <restart_button>重新开始</restart_button>
+        <restart_text>重置循环。 不是硬复位。</restart_text>
+        <hours>时</hours>
+        <minutes>分</minutes>
+        <seconds>秒</seconds>s
+        <talents_button>人才</talents_button>
+        <story_title>故事</story_title>
+        <stories>
+            <story num="0">
+                You're a simple courier, on a long trip to deliver a high priority package. Just as you entered town,
+                you tripped - breaking your glasses - and the package burst open, spilling a strange liquid on you.
+                Immediately, your meager amount of mana started draining rapidly. Right as your mana became empty, you
+                found yourself back in the moment the liquid was absorbed into your skin, with your tiny reserves
+                filled... yet draining just as before. This happened again and again, the world resetting with you,
+                until you decided you had to figure out a way to prolong how long these 'loops' were. Mana crystals are
+                often stored in pottery around town, perhaps you'll start there ...
+            </story>
+            <story num="1">
+                You reach the end of the dungeon, where a softly glowing orb floats on a pedastal. You've found the
+                dungeon core - for the first level of the dungeon, at least. As you grasp it, the essence dives into
+                you, infusing your very being with the power it holds. It is a small amount of power, but this is a
+                small dungeon. You'll be back to take this power again, knowing with the foreign knowledge implanted
+                that it will stay with you no matter when you are.
+            </story>
+            <story num="2">
+                You reach the end of the dungeon again, but for the first time the core isn't glowing. It's always been
+                thought that dungeon cores build based on the mana spent around them, but you're beginning to think the
+                essence of it's previous incarnations drains it somehow. It doesn't always happen, but you'll need to
+                put more mana into the world to take the core's benefits out of it. You shrug, accepting yet another
+                oddity of the loops.
+            </story>
+            <story num="3">
+                You've done it! You've won the tournament and obtained the cure. You can stop looping at any moment.
+                But, there's still a little more you want to do ... (GAME COMPLETE, keep playing if you want).
+            </story>
+        </stories>
+        <bonus_seconds>
+            <title>额外奖励</title>
+            <main_text><![CDATA[
+          当奖励生效时，每秒可获得4秒的额外时间（比原来快5倍）<br>
+          每次暂停或退出时奖励1次(每个离线期间上限为1个月)<br>
+          奖励状态是
+        ]]></main_text>
+            <state>
+                <on>开启</on>
+                <off>关闭</off>
+            </state>
+            <counter_text>总奖励的秒数</counter_text>
+        </bonus_seconds>
+    </time_controls>
+    <stats>
+        <title>属性</title>
+        <dex>
+            <blurb>了解你的身体。</blurb>
+            <long_form>敏捷</long_form>
+            <short_form>敏捷</short_form>
+        </dex>
+        <str>
+            <blurb>训练你的身体。</blurb>
+            <long_form>力量</long_form>
+            <short_form>力量</short_form>
+        </str>
+        <con>
+            <blurb>再坚持一会，就一小会。</blurb>
+            <long_form>体质</long_form>
+            <short_form>体质</short_form>
+        </con>
+        <spd>
+            <blurb>必须更快。</blurb>
+            <long_form>速度</long_form>
+            <short_form>速度</short_form>
+        </spd>
+        <per>
+            <blurb>有什么正在接近...</blurb>
+            <long_form>感知</long_form>
+            <short_form>感知</short_form>
+        </per>
+        <cha>
+            <blurb>交流也是需要技巧的。</blurb>
+            <long_form>魅力</long_form>
+            <short_form>魅力</short_form>
+        </cha>
+        <int>
+            <blurb>你得学会学习。</blurb>
+            <long_form>智力</long_form>
+            <short_form>智力</short_form>
+        </int>
+        <luck>
+            <blurb>幸运的人总是有更多的机会。</blurb>
+            <long_form>幸运</long_form>
+            <short_form>幸运</short_form>
+        </luck>
+        <soul>
+            <blurb>你的灵魂属于你。</blurb>
+            <long_form>灵魂</long_form>
+            <short_form>灵魂</short_form>
+        </soul>
+        <tooltip>
+            <level>等级</level>
+            <level_exp>等级经验</level_exp>
+            <exp>等级经验</exp>
+            <talent>天赋</talent>
+            <talent_exp>天赋经验</talent_exp>
+            <talent_multiplier>天赋加成</talent_multiplier>
+            <soulstone>灵魂石</soulstone>
+            <soulstone_multiplier>灵魂石加成</soulstone_multiplier>
+            <total_multiplier>总加成</total_multiplier>
+            <bonus_xp>奖励 XP</bonus_xp>
+            <explanation><![CDATA[
+          每级能力值降低相关行动的1%法力消耗.<br>
+          获取能力值同时也会获得1%的天赋, 并且循环后仍然保留.<br>
+          天赋给经验值一个（1+（天赋等级）^0.4/3）的加成.<br>
+          每次行动的经验获取速度是(初始法力消耗 / 实际法力消耗) * (天赋加成) 每个TICK.<br>
+          天赋加成和灵魂石加成是相乘的.<br><br>
+          举例 结交朋友 costs 800 mana and has a breakdown of <div class="bold">Int</div> 10% <div class="bold">Cha</div> 80% <div class="bold">Soul</div> 10%.<br>
+          This effectively means 80 of the mana is controlled by <div class="bold">Int</div>, another 80 by <div class="bold">Soul</div>, and the remaining 640 by <div class="bold">Cha</div>.<br>
+          If your <div class="bold">Cha</div> is level 20 when the action is started, the bonus would be x1.2 so it'd be 640 / 1.2 = 533.33<br>
+          Adding back the 160 from <div class="bold">Soul</div> and <div class="bold">Int</div>, the total mana the action takes (rounded up) is now 694, so ~87% of the 初始法力消耗.<br>
+          The action would give (800/694)*(1+(talent)^0.4/3) level exp per mana for the 694 mana.]]></explanation>
+            <graph_legend><![CDATA[
+          点击上面的色块来显示/隐藏.<br>
+          在刚开始的时候, 等级和天赋的效果非常小.<br>
+          鼠标悬停在上面获得更多信息.]]></graph_legend>
+        </tooltip>
+        <view>
+            <regular>常规图</regular>
+            <radar>雷达图</radar>
+        </view>
+    </stats>
+    <skills>
+        <title>技能</title>
+        <scombat>
+            <label>自身战斗</label>
+            <desc>个人战斗力 = (战斗技能 + 火焰技能 * 5) * (1 + 护甲 * 工艺公会乘数 / 5)</desc>
+        </scombat>
+        <tcombat>
+            <label>团队战斗</label>
+            <desc>团队战斗力 = 个人战斗力 + 战斗技能 * 团队成员数 * 冒险协会等级 / 2</desc>
+        </tcombat>
+        <combat>
+            <label>战斗</label>
+            <desc>为你自己而战.</desc>
+        </combat>
+        <magic>
+            <label>魔法</label>
+            <desc>掌控魔法，然后使用它.</desc>
+        </magic>
+        <practical>
+            <label>实用魔术</label>
+            <desc>魔力之手, 变形术, 探测术, 和其他小法术都很实用.</desc>
+            <desc2><![CDATA[打碎罐子 和 野外法力 的法力花费降低至 原始值 / (1 + 等级 / 100) (进位取整).<br>
+      1-200级时，每提升1级，开锁 获得1%更多的金币(舍去小数).<br>
+      101-300级时，每提升1级，短任务 获得1%更多的金币(舍去小数).<br>
+      201-400级时，每提升1级，长任务 获得1%更多的金币(舍去小数).<br>
+      当前法力花费降低为 <div id='skillBonusPractical'></div>x.]]></desc2>
+        </practical>
+        <alchemy>
+            <label>炼金术</label>
+            <desc>制作药水可不简单! 幸运的是你找到了一个老师.</desc>
+            <desc2>新手村的魔法老师非常崇拜炼金术. 每级使魔法课程效果增加+1% (向下取整) .</desc2>
+        </alchemy>
+        <dark>
+            <label>黑暗魔法</label>
+            <desc>使用各种黑暗魔法来帮助你获得法力。</desc>
+            <desc2><![CDATA[将打碎罐子和野外法力的法术力收益乘以 (1 + 等级 / 60) ^ 0.25 (四舍五入).<br> 当前授予 <div id='skillBonusDark'></div>x 法力增益。]]></desc2>
+        </dark>
+        <crafting>
+            <label>工艺</label>
+            <desc>在做体力劳动时运用双手和创造力的技巧。</desc>
+        </crafting>
+        <chronomancy>
+            <label>时间魔法</label>
+            <desc>利用时间魔法，加速时间。</desc>
+            <desc2><![CDATA[游戏整体行动速度变为(1 + 等级 / 60) ^ 0.25 倍。<br> 当前给予 <div id='skillBonusChronomancy'></div>x 速度。]]></desc2>
+        </chronomancy>
+        <pyromancy>
+            <label>火焰魔法</label>
+            <desc>火球，火栓，火盾，燃烧雷，只是一个名副其实的各种燃烧的乐趣！</desc>
+            <desc2><![CDATA[Increases 自身战斗 with 5x the efficiency of the 战斗技能.]]></desc2>
+        </pyromancy>
+        <restoration>
+            <label>恢复魔法</label>
+            <desc>从疗愈的罐体到大规模复活，你一定会好好利用这些咒语。</desc>
+            <desc2><![CDATA[Increases 团队战斗 with 2x the efficiency of the 战斗技能.]]></desc2>
+        </restoration>
+        <spatiomancy>
+            <label>睡眠魔法</label>
+            <desc>扭曲现实可能对你有用</desc>
+            <desc2><![CDATA[Mana Geyser and Mana Well are reduced to the original / (1 + level / 100) (rounded up).<br>
+            Houses to check for valuables is increased by 0.5% per level from 1-200 (rounded down).<br>
+            Short quests to finish is increased by 0.5% per level from 101-300 (rounded down).<br>
+            Long quests to finish is increased by 0.5% per level from 201-400 (rounded down).<br>
+            People to check if they're suckers is increased by 0.5% per level from 301-500 (rounded down).<br>
+            Currently multiplying costs by <div id='skillBonusSpatiomancy'></div>x.]]></desc2>
+        </spatiomancy>
+        <tooltip>
+            <level>等级:</level>
+            <level_exp>等级经验:</level_exp>
+            <no_reset_on_restart>技能通过重置持续。</no_reset_on_restart>
+        </tooltip>
+    </skills>
+    <buffs>
+        <title>增益魔法</title>
+        <dark_ritual>
+            <label>黑暗仪式</label>
+            <desc>女巫欣赏你对黑暗艺术的奉献。 每个仪式从黑暗魔法动作（向下舍入）获得1%到"黑暗魔法"的收益。</desc>
+            <desc2><![CDATA[<br>1-20级时，每级仪式使初学者的行动速度快10%。<br>
+            1-40时，每级仪式使森林小径的行动速度快5%。<br>
+            41-60时，每级仪式使商业区的行动速度快2.5%。<br>]]>
+            </desc2>
+        </dark_ritual>
+        <imbue_mind>
+            <label>灌输心灵</label>
+            <desc><![CDATA[使用灵魂石的力量，你可以增加你的训练极限。<br>
+            将每个级别执行每个训练操作的最大次数增加 1 次。]]>
+            </desc>
+        </imbue_mind>
+         <great_feast>
+            <label>伟大盛宴</label>
+            <desc><![CDATA[这顿盛宴是如此的充实，它设法让你通过你的循环饱足！那是一种令人印象深刻的魔法。<br>
+            自己战斗每级增加5%。（向下舍入）]]>
+            </desc>
+        </great_feast>
+        <the_spire>
+            <label>尖塔</label>
+            <desc><![CDATA[在尖塔达到新的高度，你的思想和灵魂充满活力。<br>
+            人才经验每级别增加1%。（向下舍入）。]]>
+            </desc>
+        </the_spire>
+        <tooltip>
+            <level>等级</level>
+            <no_reset_on_restart>重新开始后技能也保留。</no_reset_on_restart>
+        </tooltip>
+    </buffs>
+    <towns>
+        <town0>
+            <name>初学者</name>
+            <desc>地下室的老鼠, 凶猛的游荡野猪, 蹦蹦跳跳的史莱姆, 以及喜欢讲故事的陌生人在新手村是非常常见的。
+                有些人遗失了他的帽子和鞋子, 
+                周围最好的剑仅仅是铁做的。 幸运的是你可以很体面的在新城市进行循环。
+                如果这里没有那么多规则禁止你做危险的事, 那就完美了。
+            </desc>
+        </town0>
+        <town1>
+            <name>森林小径</name>
+            <desc>一个似乎永远都是绿色的森林. 你感觉到这里法力充沛...</desc>
+        </town1>
+        <town2>
+            <name>商业区</name>
+            <desc>一个繁华的小镇。你可以在这里找到许多景点，如图书馆、冒险公会、手工艺公会和集市。哦，我提到过有很多呆子可以骗吗？</desc>
+        </town2>
+        <town3>
+            <name>奥林匹斯山</name>
+            <desc>你可以走那条路去另一个镇，但不行！ You just <i>had</i> to go to Mt. Olympus, didn't you. 但是不管怎样，当你在这里的时候，由于你既不是狗也不是老人，你可以学习一些新的技巧。在你干的时候杀了一些无辜的巨魔。</desc>
+        </town3>
+        <town4>
+            <name>瓦尔哈拉</name>
+            <desc>一座杂乱无章的城市，充满了各种各样的美好事物。 维京人，啤酒，天使，啤酒，胡说八道，还有啤酒！你可以在大厅或市郊度过你的时间。无论哪种方式，你一定会有一个伟大的时间。</desc>
+        </town4>
+        <town5>
+            <name>阿德普茨维尔</name>
+            <desc>一个曾经熟悉的地方，现在爬满了阴影和浪费病假的不祥感。在它的中心矗立着一大根阴郁的紫色光柱，从被乌云包围的尖顶中渗出。它向城镇周围的不同点发出10束微弱的紫光，似乎投射出所有的阴影。也许你应该看看那些斑点。</desc>
+        </town5>
+    </towns>
+    <talents>
+        <calculated_shattering>
+            <name>推算砸碎</name>
+            <desc><![CDATA[
+            练习你的粉碎技术，以尽快通过所有这些锅似乎相当有成效。<br>每级降低 <span class="localized" data-lockey="actions>smash_pots>name"></span> 魔法。
+        ]]></desc>
+        </calculated_shattering>
+        <no_frill_frames>
+            <name>无褶边框架</name>
+            <desc><![CDATA[
+            如果你花点时间去打眼镜，你可以找到一些更便宜的相框。 考虑到你不会使用它们太久，直到一切重新开始, 你认为偷懒是一个好主意。<br>每级降低一个<span class="localized" data-lockey="actions>buy_glasses>name"></span> 黄金成本。
+        ]]></desc>
+        </no_frill_frames>
+    </talents>
+    <actions>
+        <title>行动选项</title>
+        <title_stories>行动故事</title_stories>
+        <title_list>行动列表</title_list>
+        <title_loadout>列表</title_loadout>
+        <tooltip>
+            <desc><![CDATA[
+          法力消耗按比例受能力值影响 %s.<br>
+          经验获取也是.<br>
+          每个TICK都会获得经验值.<br>
+          除非另有说明，否则在操作完成后获得技能经验.<br>
+          执行未执行过的行动有可能会解锁新的行动.]]></desc>
+            <mana_cost>法力消耗</mana_cost>
+            <exp_multiplier>经验加成</exp_multiplier>
+            <mana_used>法力使用</mana_used>
+            <mana_used_explanation><![CDATA[
+          Shows stat gain affecting speed.<br>
+          Updates every completed action.<br>
+          Accurate at end of run.]]></mana_used_explanation>
+            <amount>数量</amount>
+            <current_list_active>保持当前列表激活</current_list_active>
+            <repeat_last_action>重复列表上的最后一个行动</repeat_last_action>
+            <add_action_top>将行动添加到列表的顶部</add_action_top>
+            <save_loadout>保存列表</save_loadout>
+            <load_loadout>加载已选择列表</load_loadout>
+            <clear_list>清除列表</clear_list>
+            <higher_done_percent_benefic>随着进度增加你可以解锁更多东西。</higher_done_percent_benefic>
+            <progress_label>进度</progress_label>
+            <total_found>总计找到</total_found>
+            <total_checked>总计检查</total_checked>
+            <icons>
+                <circle>上限到当前最大值</circle>
+                <plus>添加一个循环</plus>
+                <minus>减去一个循环</minus>
+                <arrows_h>拆分行动</arrows_h>
+                <sort_up>向上移动行动</sort_up>
+                <sort_down>向下移动行动</sort_down>
+                <circles>启用/禁用 行动</circles>
+                <times>移除行动</times>
+            </icons>
+            <list_explanation><![CDATA[
+      拖动行动可以调整它们的顺序.<br>
+      右边的列表就是你下一次循环执行的行动.<br>
+      1秒 = 50 法力.<br>
+      每个行动至少需要1TICK.<br>
+      当所有行动都完成后会直接进入下一次循环.]]></list_explanation>
+        </tooltip>
+        <current_action>
+            <mana_original>初始法力消耗:</mana_original>
+            <mana_used>实际消耗:</mana_used>
+            <mana_remaining>剩余的法力:</mana_remaining>
+            <gold_remaining>剩余的黄金:</gold_remaining>
+            <time_spent>时间花费:</time_spent>
+            <failed_attempts>失败的尝试:</failed_attempts>
+            <error>出错:</error>
+        </current_action>
+        <!--town 1-->
+        <wander>
+            <label>漫步</label>
+            <label_done>探索</label_done>
+            <tooltip>探索城镇，寻找隐藏的区域和宝藏。</tooltip>
+            <story_1><![CDATA[<b>20% Explored:</b>⮀ You know the general layout of the small village now, you don't get lost walking from one side to another!]]></story_1>
+            <story_2><![CDATA[<b>40% Explored:</b>⮀ You're starting to really know your way around, you can almost figure your way around without following a set path!]]></story_2>
+            <story_3><![CDATA[<b>60% Explored:</b>⮀ You've tread all the main roads and you avail yourself to the unkempt side paths and well worn paths. If you let yourself into some houses, well, no one needs to know, do they?]]></story_3>
+            <story_4><![CDATA[<b>80% Explored:</b>⮀ You've decided to explore the houses now that you've trod every single feasible path in this small village. Man, the stuff people keep around.]]></story_4>
+            <story_5><![CDATA[<b>100% Explored:</b>⮀ You've been everywhere, there is absolutely nowhere in this town you haven't been. You've been in every cellar, under every bed, and in every closet. You've pried all the floorboards, and just in general, been into everything. Except the houses with locks, those dastardly locks.]]></story_5>
+        </wander>
+        <smash_pots>
+            <label>打碎罐子</label>
+            <label_done>已打碎的罐子</label_done>
+            <info_text1>剩余有法力的罐子</info_text1>
+            <info_text2>总计有法力的罐子</info_text2>
+            <info_text3>需要检查的罐子</info_text3>
+            <tooltip><![CDATA[
+            他们只是待在那里，没有打碎，充满潜力。<br>每个有法力的罐子里含有 
+        ]]></tooltip>
+            <tooltip2><![CDATA[
+            法力。<br>每10个罐子里有一个包含法力
+        ]]></tooltip2>
+            <story_1><![CDATA[<b>50 Pots with mana:</b>⮀ You've smashed every single pot in this village, and have figured out all the pots that contain any trace of mana. Having to break them all physically was time consuming, and your skills at absorbing the mana weren't the best. There must be more efficient ways of doing it.]]></story_1>
+        </smash_pots>
+        <pick_locks>
+            <label>开锁</label>
+            <label_done>已开锁</label_done>
+            <info_text1>剩余有财宝的房子</info_text1>
+            <info_text2>总计有财宝的房子</info_text2>
+            <info_text3>待搜刮的房子</info_text3>
+            <tooltip><![CDATA[
+            不用担心；他们不会记得。<br>每个有财宝的房子里有 
+        ]]></tooltip>
+            <tooltip2><![CDATA[
+            黄金。<br>每10个房子里有一个有财宝。<br>解锁于 20% 探索。
+        ]]></tooltip2>
+            <story_1><![CDATA[<b>House checked:</b>⮀ You manage to pick a lock that was in disrepair and opened the door, only to walk into the home's inhabitant. Good thing the loop ended not soon after. You're gonna have to figure out which houses are worth hitting. Some money wouldn't go astray.]]></story_1>
+            <story_2><![CDATA[<b>50 Houses known:</b>⮀ You really should look at hitting those locked houses around, who knows what goodies you'll manage to scrounge up.]]></story_2>
+            <story_3><![CDATA[<b>10 Houses with loot:</b>⮀ You've figured out which houses are uninhabited and have enough gold for it to be worth your time. As they say, time is mana!]]></story_3>
+        </pick_locks>
+        <buy_glasses>
+            <label>购买眼镜</label>
+            <tooltip><![CDATA[
+            这不公平。现在还有时间。一直有我需要的时间<br>现在你必须花费10黄金购买新的眼镜!<br>使当前循环中此后的漫步效率变为4倍。<br>此效果作用于所有带有眼镜图标的行动<br>只需购买一次眼镜。<br>解锁于 20% 探索。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Glasses bought:</b>⮀ The world snaps into sharp focus as you put them on and you gawk a little as details that had slipped your eyes previously stood out in sharp contrast. You're a little gobsmacked at how much of a difference they make.]]></story_1>
+        </buy_glasses>
+        <buy_mana>
+            <label>购买法力</label>
+            <tooltip><![CDATA[
+            1 黄金 = 50 法力. 一次性购买你能买到的所有法力.<br>解锁于 20% 探索。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </buy_mana>
+        <meet_people>
+            <label>结交朋友</label>
+            <label_done>已结交朋友</label_done>
+            <tooltip><![CDATA[
+            他们不仅仅会简单的聊天。<br>解锁于 22% 探索。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>1% 已结交朋友:</b>⮀ You stand there, a little stumped at the situation you’ve gotten yourself into, when a young lass asks you about your day so far.]]></story_1>
+            <story_2><![CDATA[<b>20% 已结交朋友:</b>⮀ The people here are generally nice enough, if a bit brusque at times. Some people have small tasks that they're happy to pay for.]]></story_2>
+            <story_3><![CDATA[<b>40% 已结交朋友:</b>⮀ There are a surprising amount of people in the village. You didn’t catch that when you were looking around.]]></story_3>
+            <story_4><![CDATA[<b>60% 已结交朋友:</b>⮀ It almost seems that most people have something they want done, the real problem is figuring out whats worth your time.]]></story_4>
+            <story_5><![CDATA[<b>80% 已结交朋友:</b>⮀ Having met such a large portion of the people in this village, you almost feel guilty about stealing from them. Almost.]]></story_5>
+            <story_6><![CDATA[<b>100% 已结交朋友:</b>⮀ You've spoken to everyone. Every child, adult, teen, animal and plant in this village. Everyone, and everything.]]></story_6>
+        </meet_people>
+        <train_strength>
+            <label>力量训练</label>
+            <tooltip><![CDATA[
+            增强那些肌肉。再接再厉。<br>拥有4倍的经验和天赋速度，每次循环中只能完成 <div id='trainingLimitStr'></div> 次。<br>解锁于 5% 结交朋友。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Strength trained:</b>⮀ You lift the oak barrel filled with water, holding it while you squat again and again. The barrel rests upon your back as you do push up after push up. It's a trusty companion in your quest to regain your muscle.]]></story_1>
+            <story_2><![CDATA[<b>100 Strength talent:</b>⮀ Your body adapts faster and faster to the strains you put upon it. You know exactly how far to push it and can tell almost instinctively when to stop.]]></story_2>
+            <story_3><![CDATA[<b>1,000 Strength talent:</b>⮀ Your body seems to build itself up faster and faster each time you break it down. You can practically feel your mana purr in satisfaction as it rebuilds your body to be stronger and stronger.]]></story_3>
+        </train_strength>
+        <short_quest>
+            <label>短任务</label>
+            <label_done>已完成短任务</label_done>
+            <info_text1>剩余有战利品的短任务</info_text1>
+            <info_text2>总计有战利品的短任务</info_text2>
+            <info_text3>未完成的短任务</info_text3>
+            <tooltip><![CDATA[
+            成为一个英雄! ...如果有好奖励并且不需要太长时间。<br>有战利品的短任务可以给你 
+        ]]></tooltip>
+            <tooltip2><![CDATA[
+            黄金作为奖励。<br>每5个短任务有一个有战利品。<br>解锁于 5% 结交朋友。
+        ]]></tooltip2>
+            <story_1><![CDATA[<b>Short Quest finished:</b>⮀ You help an elderly woman get her cat down from atop her house, she rewards you handsomely for your efforts.]]></story_1>
+            <story_2><![CDATA[<b>20 Short Quests with loot in a loop:</b>⮀ You’ve helped everyone who’s been willing to take you on, and the gold from your work jingles beautifully in your pockets. The satisfaction of a job well done fills you with pride.]]></story_2>
+        </short_quest>
+        <investigate>
+            <label>调查</label>
+            <label_done>调查</label_done>
+            <tooltip><![CDATA[
+            你一直在听一些谣言...<br>解锁于 25% 结交朋友。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>20% Investigated:</b>⮀ You catch some snippets of truly interesting gossip. Apparently a Mage and Warrior duo had stopped in and were sticking around for a little while.]]></story_1>
+            <story_2><![CDATA[<b>40% Investigated:</b>⮀ People are really helpful when you help them, you're almost starting to get a reputation as a busybody around here, but it's offset in that you actually do help people.]]></story_2>
+            <story_3><![CDATA[<b>60% Investigated:</b>⮀ People are generally more willing to open up if you seem like you know things, and you do know things, as you've been around here awhile now.]]></story_3>
+            <story_4><![CDATA[<b>80% Investigated:</b>⮀ The villagers are all to happy to share some stories with you at this point, it doesn't hurt that you know a little about most people now and are more than willing to strike up a conversation.]]></story_4>
+            <story_5><![CDATA[<b>100% Investigated:</b>⮀ You've done it, spoken to everyone in this village. Spent a loop or more on each of them, actually. You know what needs to be done, and at this point you can just go straight there. You can also engineer a situation in which the more stubborn ones will offer you a quest.]]></story_5>
+        </investigate>
+        <long_quest>
+            <label>长任务</label>
+            <label_done>已完成长任务</label_done>
+            <info_text1>剩余有战利品的长任务</info_text1>
+            <info_text2>总计有战利品的长任务</info_text2>
+            <info_text3>未完成的长任务</info_text3>
+            <tooltip><![CDATA[
+            成为一个更威风的英雄! ...当然只在有人看到的时候。<br>有战利品的长任务可以给你 
+        ]]></tooltip>
+            <tooltip2><![CDATA[
+            黄金和1声誉作为奖励。<br>每5个长任务有一个有战利品。<br>解锁于 10% 调查.
+        ]]></tooltip2>
+            <story_1><![CDATA[<b>Long Quest finished:</b>⮀ You cleared out a cellar of rats; there were at least sixty of the blighters. You were rewarded handsomely, and you got a small reputation boost to boot.]]></story_1>
+            <story_2><![CDATA[<b>10 Long Quests with loot in a loop:</b>⮀ You’ve cleared out cellars, helped build a house, collected flowers for dyes, worked in the bakery, taken out trash, and helped a seamstress finish a gift for her husband. Your reputation is spreading as the helpful courier. Everyone is at the very least willing to listen to you.]]></story_2>
+        </long_quest>
+        <throw_party>
+            <label>举行聚会</label>
+            <tooltip><![CDATA[
+            休息一下并进行社交。<br>给予 已结交朋友 进度，相当于16次 结交朋友 行动。<br>消耗 2 声誉。<br>解锁于 30% 调查.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Party thrown:</b>⮀ You announce that its your birthday and you want to throw a party. You commandeer the village square and the people necessary to make it happen. You don't have the gold but people aren't quite able to say no. You promise you'll pay it off with the money from this current job.]]></story_1>
+        </throw_party>
+        <warrior_lessons>
+            <label>战术训练</label>
+            <tooltip><![CDATA[
+            学习战斗可能很重要。 你还有很长的路要走。<br>需要至少 2 点声誉。<br>解锁于 20% 调查.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>1 Combat:</b>⮀ You manage to track down the warrior that was staying in town, and are greeted by a small woman holding a sword almost as tall as her. She introduces herself as "Iron" and smiles politely, doesn't stop her from thoroughly trouncing you.]]></story_1>
+            <story_2><![CDATA[<b>100 Combat:</b>⮀ You manage to give Iron a run for her money, but she still manages to eek out a victory, she's noticeably worn out afterwards.]]></story_2>
+            <story_3><![CDATA[<b>200 Combat:</b>⮀ You push Iron to the brink of defeat and then she starts fighting dirty.]]></story_3>
+            <story_4><![CDATA[<b>250 Combat:</b>⮀ You manage to finally defeat Iron, all your experience fighting her finally pays off. You feel really proud of yourself, right up until she smacks your head with her sword and demands a rematch.]]></story_4>
+        </warrior_lessons>
+        <mage_lessons>
+            <label>魔法训练</label>
+            <tooltip><![CDATA[
+            神秘主义者让你陷入困境，也许它可以帮助你摆脱困境。<br>需要至少 2 点声誉。<br>解锁于 20% 调查.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>1 Magic:</b>⮀ You approach a burly man dressed in flowing robes, and ask if he would be willing to teach you some magic. The man agrees to teach you some basic cantrips if you help him out with menial tasks. He introduces himself as Warrick.]]></story_1>
+            <story_2><![CDATA[<b>100 Magic:</b>⮀ Warrick compliments you on your ability to wield mana, and is happy to share some more dangerous cantrips with your promise to not use it for ill. He refuses to teach you about alchemy.]]></story_2>
+            <story_3><![CDATA[<b>200 Magic:</b>⮀ Warrick is suspicious about your proficiency with mana for someone he's just run into in the wild, but is still more than willing to humor you. If he throws appraising glances at you every now and then, you pay them no mind.]]></story_3>
+            <story_4><![CDATA[<b>250 Magic:</b>⮀ You and Warrick duel, your lessons from that point on are finding an out of the way location and duking it out with magic. Warrick seems appreciative about the exertion.]]></story_4>
+            <story_5><![CDATA[<b>10 Alchemy:</b>⮀ You offer to help him with his alchemy work and he immdiately seems to develop a soft spot for you, talking about herbs and their effects when combined with eachother and how they build together to create mystical potions. The man's passionate, that's for sure.]]></story_5>
+            <story_6><![CDATA[<b>50 Alchemy:</b>⮀ You offer Warrick some alchemy techniques that he's never heard of in exchange for some more magic techniques and lessons. He agrees readily.]]></story_6>
+            <story_7><![CDATA[<b>100 Alchemy:</b>⮀ You offer to teach Warrick about alchemy if he teaches you about the branches of magic you have little grounding in. The man himself is a genius and has much to teach. He gives it his all, tempted by the secrets of Alchemy.]]></story_7>
+        </mage_lessons>
+        <heal_the_sick>
+            <label>治愈病人</label>
+            <label_done>痊愈</label_done>
+            <label_part>病人</label_part>
+            <tooltip><![CDATA[
+            您可能无法治愈所有疾病，但他们会为您尽力而为的事而感激。<br>治愈过程包括3个阶段，每个阶段需求不同的主要属性 - 诊断 (感知), 治疗 (智力), 告知 (魅力).<br>每消耗1点法力获得 (魔法技能) * (1 + 主要属性 / 100) * √(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点数。 <br>需要至少 1 点声誉。<br>解锁于 12 魔法技能.<br>每治愈一个病人获得 3 声誉。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
+            <story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
+            <story_3><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_3>
+            <segment_names>
+                <name>诊断</name>
+                <name>治疗</name>
+                <name>告知</name>
+            </segment_names>
+            <!--TODO: give this action story-->
+        </heal_the_sick>
+        <fight_monsters>
+            <label>打怪</label>
+            <label_done>已击杀</label_done>
+            <tooltip><![CDATA[
+            慢慢地，你正在弄清楚它们的模式。<br>怪物包括3种类型，这些类型需求不同的主要属性 - 快速 (速度), 防守 (力量), 嘲讽 (体质).<br>每消耗1点法力获得 (自身战斗) * (1 + 主要属性 / 100) * √(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点数。<br>需要至少 2 点声誉。<br>解锁于 10 战斗技能.<br>每次完成战斗获得 20 黄金 
+        ]]></tooltip>
+            <segment_names>
+                <name>鹿</name>
+                <name>巨龟</name>
+                <name>地精</name>
+                <name>恶魔兔</name>
+                <name>巨型蜜獾</name>
+                <name>毒蛇</name>
+                <name>怒猴</name>
+                <name>巨魔</name>
+                <name>食人魔</name>
+                <name>小精灵</name>
+                <name>树人</name>
+                <name>果冻怪</name>
+                <name>仙女</name>
+                <name>兽人</name>
+                <name>眼魔</name>
+                <name>幽灵</name>
+                <name>拟态妖</name>
+                <name>Shambling Mounds</name>
+                <name>Corrupted Mushroomfolk</name>
+                <name>Giant Owls</name>
+                <name>Blood Trolls</name>
+                <name>Small Wyrms</name>
+                <name>Displacer Beasts</name>
+                <name>Gibbering Mouthers</name>
+                <name>Mind Flayers</name>
+                <name>Aboleths</name>
+                <name>Ancient Dragons</name>
+                <name>Liches</name>
+                <name>Tarrasques</name>
+                <name>Demiliches</name>
+                <name>Demigods</name>
+                <name>Gods</name>
+                <name>Deer but they're jerks and slightly larger than before</name>
+                <name>Giant Turtles with spherical shells</name>
+                <name>Goblins but they're late on their rent</name>
+                <name>Demon rabbits but they have massive teeth</name>
+                <name>Giant Honey badgers but they can turn invisible</name>
+                <name>Venomous Snakes that are also poisonous</name>
+                <name>Angry Monkeys with twelve arms</name>
+                <name>Trolls that aren't weak against fire</name>
+                <name>Ogres but they're smarter</name>
+                <name>Pixies with sand instead of pixie dust</name>
+                <name>Treants but they're on fire</name>
+                <name>Gelatinous Cubes that are constantly growing in size</name>
+                <name>Fairies with blindingly bright dresses</name>
+                <name>Orcs with multiple weapons</name>
+                <name>Beholders with mouthes on every eye</name>
+                <name>Spectres that are actually scary</name>
+                <name>Mimics without an obvious tell</name>
+                <name>Shambling Mounds that can locomote quickly</name>
+                <name>Corrupted Mushroomfolk that taste bad</name>
+                <name>Giant Owls that can swim</name>
+                <name>Blood Trolls that don't like your hairstyle</name>
+                <name>Small Wyrms that aren't grounded</name>
+                <name>Displacer Beasts that can properly place themselves</name>
+                <name>Gibbering Mouthers with eyes on every mouth</name>
+                <name>Mind Flayers with pitchforks</name>
+                <name>Aboleths but harder, better, faster, and stronger</name>
+                <name>Ancient Dragons who've graduated from college</name>
+                <name>Liches with strong political opinions</name>
+                <name>Tarrasques that actually notice you</name>
+                <name>Demiliches happy about their condition</name>
+                <name>Demigods that are even more elitist than before</name>
+                <name>Gods but they had to come in on saturday</name>
+            </segment_names>
+            <segment_alt_names>
+                <name>Speedy Monsters</name>
+                <name>Tough Monsters</name>
+                <name>Scary Monsters</name>
+            </segment_alt_names>
+            <segment_modifiers>
+                <segment_modifier>一对</segment_modifier>
+                <segment_modifier>一些</segment_modifier>
+                <segment_modifier>大量</segment_modifier>
+            </segment_modifiers>
+            <story_1><![CDATA[<b>Monster killed:</b>⮀ It's all so new, the way they respond and attack, you're not ashamed to admit that you almost got brained by a deer. Either way, their hides and rendered components will sell well.]]></story_1>
+            <story_2><![CDATA[<b>100 Monsters killed:</b>⮀ You've fought enough that you're really starting to figure out how they'll respond to most things.]]></story_2>
+            <story_3><![CDATA[<b>500 Monsters killed:</b>⮀ You've pretty much figured out their patterns now, how they respond to what you do.]]></story_3>
+            <story_4><![CDATA[<b>1,000 Monsters killed:</b>⮀ You know exactly what they're going to do, pretty much nothing surprises you anymore.]]></story_4>
+            <story_5><![CDATA[<b>5,000 Monsters killed:</b>⮀ You're able to effectively plan ambushes and set traps to kill them without even being there anymore.]]></story_5>
+            <story_6><![CDATA[<b>10,000 Monsters killed:</b>⮀ You don't struggle or need to worry about anything they throw at you anymore, you know everything.]]></story_6>
+            <story_7><![CDATA[<b>20,000 Monsters killed:</b>⮀ This is a joke, the only reason you're still doing this is the gold it rakes in. You need it.]]></story_7>
+        </fight_monsters>
+        <small_dungeon>
+            <label>小型地牢</label>
+            <label_done>已探索</label_done>
+            <label_complete>完成</label_complete>
+            <label_part>小型地牢</label_part>
+            <tooltip><![CDATA[
+            每次都有小的挑战，它们很难适应。在终点可以获得灵魂石，但它们并不总是在地牢中……奇怪。<br>在地牢不同的位置需要不同的技能。<br>一次行动可以清理多层地牢，只要你的属性足够高。<br>每消耗1点法力获得 (魔法技能 + 自身战斗) * (1 + 主要属性 / 100) * √(1 + 地牢完成次数 / 200) * (初始法力消耗 / 实际法力消耗) 进度点数。<br>解锁于战斗和魔法技能总和35.<br>需要至少 2 点声誉。<br>每次完成获得1灵魂石 - 查看计数以获得更多信息.
+        ]]></tooltip>
+            <completed_tooltip><![CDATA[
+            每个灵魂石提升一个随机属性的经验获得(1+(灵魂石)^.8/30).<br>每层地牢都有灵魂石, 当你获得时, 你下次获得灵魂石的概率下降2%。<br>每消耗1点法力，灵魂石获得概率恢复 0.00001%。<br>
+        ]]></completed_tooltip>
+            <chance_label>几率</chance_label>
+            <last_stat_label>上次属性</last_stat_label>
+            <segment_names>
+                <name>尖刺陷阱</name>
+                <name>长走廊</name>
+                <name>飞箭陷阱</name>
+                <name>谜语守卫</name>
+                <name>旋转飞斧</name>
+                <name>Boss</name>
+                <name>寻找战利品</name>
+            </segment_names>
+            <story_1><![CDATA[<b>Small dungeon attempted:</b>⮀ The cavernous entrance to the villages dungeon greets you. It's dark and looming, with rocks forming jagged fangs. It's the most imposing thing you've found in this town so far.]]></story_1>
+            <story_2><![CDATA[<b>1,000 Dungeon floors looted:</b>⮀ You know your way around the dungeon like no one else, almost as if you've explored every nook and cranny. You have.]]></story_2>
+            <story_3><![CDATA[<b>5,000 Dungeon floors looted:</b>⮀ The dungeon poses less and less of a threat to you each time you conquer it, the soulstones growing your power by small amounts now that you've accumulated so many of them.]]></story_3>
+            <story_4><![CDATA[<b>10,000 Dungeon floors looted:</b>⮀ The dungeon is a joke to you, if you could teleport you'd simply jump straight to them, the dungeon in your mind has been reduced to how short it is to get from one soulstone to the next. If you have to destroy a couple walls, so be it.]]></story_4>
+            <story_5><![CDATA[<b>6 Floors cleared in a loop:</b>⮀ You reach the actual end of the dungeon, the dungeon core glows an angry red as if irritated that you're at this floor at all. Regardless, you take your soulstone and leave, the dungeon core's red glow following you the whole time.]]></story_5>
+        </small_dungeon>
+        <buy_supplies>
+            <label>购买补给</label>
+            <tooltip><![CDATA[
+            准备继续前进。<br>花费 <div id='suppliesCost'></div> 黄金.<br>你只需要购买一次补给<br>解锁于战斗和魔法技能总和35.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Supplies bought:</b>⮀ A tent, enough rations to last for a month, portable cooking equipment and other assorted paraphernalia for your trip. The tent is durable and the rations don't taste bland and lifeless. It was probably worth the 300 gold asking price. Good thing you knew how to haggle.]]></story_1>
+            <story_2><![CDATA[<b>Supplies bought without haggling:</b>⮀ How luxurious! You had the gold to just throw it away now, even though the mana would've been more beneficial in the long run, not having to haggle once in awhile was surprisingly nice. Truly, you have grown luxuriant.]]></story_2>
+        </buy_supplies>
+        <haggle>
+            <label>讨价还价</label>
+            <tooltip><![CDATA[
+            他们不会非常喜欢你，但嘿——你要走了。<br>消耗 1 声誉降低补给品价格 20. <br>解锁于战斗和魔法技能总和35.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Haggle:</b>⮀ The shopkeep has some of the supplies you need, but they are of inferior quality and you're not paying his asking price for them, at least that's what you tell him. You argue, grumble, make sharp comments and are just in general unpleasant to one another.]]></story_1>
+            <story_2><![CDATA[<b>15 Haggles in a loop:</b>⮀ The shopkeep basically throws you out the store shouting and cursing vociferously at you. You ears ring slightly at the barrage.]]></story_2>
+            <story_3><![CDATA[<b>16 Haggles in a loop:</b>⮀ At this point, it served no purpose, you were doing this solely for the fun of it. No matter how much you haggled, the merchant wasn't going to pay you to take the supplies. That was just wishful thinking. Although, losing the reputation you had accrued could be useful in the long run...]]></story_3>
+        </haggle>
+        <start_journey>
+            <label>开始旅途</label>
+            <tooltip><![CDATA[
+            沿着小路到达下一个城镇。你需要继续前进，直到可以学习如何关闭这些循环。<br>消耗 1 补给品. 完成一次后解锁 探索森林 行动。之后的循环中，进行探索森林行动之前要先完成此行动<br>解锁于战斗和魔法技能总和35.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Traveled to the second zone:</b>⮀ You leave town, heading towards the forest that stood between the village and Merchanton. You had exhausted every option in Beginnersville and there was nothing here that would stop the loops, it was time to look for other areas and solutions.]]></story_1>
+        </start_journey>
+        <open_rift>
+            <label>Open Rift</label>
+            <tooltip><![CDATA[
+            Using your vast knowledge of the dark arts, you can open a rift into the shadow realm to send you straight to Adeptsville.<br>解锁于 500 Dark Magic.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </open_rift>
+        <!--town 2-->
+        <explore_forest>
+            <label>探索森林</label>
+            <label_done>森林探索</label_done>
+            <tooltip><![CDATA[
+            多么愉快的地方。<br>拥有眼镜时获得两倍探索速度。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>1% 森林探索.</b>⮀ You look at the side of the path from your little campsite, and are struck with a sense of wanderlust. You leave your camp to explore. Not too far from your campsite you find a tiny glade practically overflowing with mana.]]></story_1>
+            <story_2><![CDATA[<b>10% 森林探索.</b>⮀ The sense of wanderlust hasn't faded but you've definitely discovered the darker side of this forest. You continue to find tiny glades filled with mana throughout the forest.]]></story_2>
+            <story_3><![CDATA[<b>20% 森林探索.</b>⮀ You were exploring the forest when you found what looked like game trails but was actually a footpath worn into the ground, you decided to follow it.]]></story_3>
+            <story_4><![CDATA[<b>40% 森林探索.</b>⮀ You continue exploring the forest, and you've discovered something odd about it. One side of the main path is... calm you suppose, peaceful even. Welcoming. The other makes you feel ill at ease, as if there are unseen eyes constantly on you. One side is light and airy, the other dark and gloomy.]]></story_4>
+            <story_5><![CDATA[<b>50% 森林探索.</b>⮀ You found flowers in the forest, growing in the almost pitch black beneath the thick canopy on the gloomy side of the forest. Yet the flowers grow. There's a desire to follow them, almost as if they're saying, "Follow Me!"]]></story_5>
+            <story_6><![CDATA[<b>60% 森林探索.</b>⮀ You continue searching around the forest, finding tracks and trails, boltholes and hollowed out tree trunks. Life is abundant in this forest, and you're seeing that. On both sides.]]></story_6>
+            <story_7><![CDATA[<b>80% 森林探索.</b>⮀ You've managed to figure out where most of the herds in this forest are during your trip through, you've also stumbled across a fair amount of plants that produce mana, you wonder if they have a use.]]></story_7>
+            <story_8><![CDATA[<b>100% 森林探索.</b>⮀ You've done it, you find it impossible to get lost in the forest now, and your sense of wanderlust has faded. You've seen practically all you can in this forest. There were areas barred to you, and you found no way to enter them with a cursory examination.]]></story_8>
+        </explore_forest>
+        <wild_mana>
+            <label>野外法力</label>
+            <label_done>挖掘法力来源</label_done>
+            <info_text1>剩余法力来源</info_text1>
+            <info_text2>总共法力来源</info_text2>
+            <info_text3>待检查的法力来源</info_text3>
+            <tooltip><![CDATA[
+            大多数旅行者看不见它们，但是你有时间找到和收获它们。<br>每个法力点有 
+        ]]></tooltip>
+            <tooltip2><![CDATA[
+            法力。<br>每10个法力点有一个具有法力
+        ]]></tooltip2>
+            <story_1><![CDATA[<b>Source checked for mana:</b>⮀ It's just sitting there, stray slightly from the beaten path and you find an abundance of mana just waiting for someone to take it, the only catch being you need to extract it from the plants surrounding it and they've proven slightly unwilling to part with it.]]></story_1>
+        </wild_mana>
+        <gather_herbs>
+            <label>收集草药</label>
+            <label_done>连根拨起的有趣植物</label_done>
+            <info_text1>剩余有用的植物</info_text1>
+            <info_text2>总计有用的植物</info_text2>
+            <info_text3>需检查的植物</info_text3>
+            <tooltip><![CDATA[
+            可能还需要挖掘任何有用的东西。<br>每10个有趣的植物中有一个是草药。<br>解锁于 10% 森林探索.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Plant checked for use:</b>⮀ You pull up random plants across the forest that emanate mana only to find that in most cases, they're simply plants that have started gathering mana, but in some cases they're actually magical plants. Small distinction, but a significant one.]]></story_1>
+        </gather_herbs>
+        <hunt>
+            <label>狩猎</label>
+            <label_done>剥皮的动物</label_done>
+            <info_text1>剩余有皮革的动物</info_text1>
+            <info_text2>总计有皮革的动物</info_text2>
+            <info_text3>需要检查皮革的动物</info_text3>
+            <tooltip><![CDATA[
+            森林的馈赠。<br>每10个动物中有一个具有优良的皮革。<br>解锁于 40% 森林探索.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Animal checked for hide:</b>⮀ You manage to track down a relatively harmless animal, but in the time it took you to bring the critter down you had ruined its pelt beyond all use. You needed practice.]]></story_1>
+            <story_2><![CDATA[<b>10 Animals with hide:</b>⮀ You ghost through the forest, targeting packs that you know graze or are moving through locations easily reached and ambushed. You're starting to get good at this tracking thing, but you suppose you only really have to do it once.]]></story_2>
+            <story_3><![CDATA[<b>20 Animals with hide:</b>⮀ A deer languishes by the water, lapping gently at the water seemingly unaware of your presence. It remains unaware of your presence as you slowly edge closer, the deer remains unaware of your presence until it is unaware of everything forevermore. You ghost through the forest on silent feet, swift as the wind and as deadly as a viper, your body swaying as you slip between blind spots and perception to reach your targets. The animals feel nothing as they die, you've had much practice. You offer a silent thanks as their pelts will be of value to you.]]></story_3>
+        </hunt>
+        <sit_by_waterfall>
+            <label>瀑边静坐</label>
+            <tooltip><![CDATA[
+            这里很宁静。很大声，但宁静。<br>拥有4倍的经验和天赋速度，每次循环中只能完成 <div id='trainingLimitSoul'></div> 次。<br>解锁于 70% 森林探索.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Sat by waterfall:</b>⮀ You find a waterfall flowing from a higher point in a mountain down the side oddly scenic and decide stop to stare for awhile, simply to observe the natural beauty of the sight. As you watched, the force of the water managed to dislodge a small pebble from the top of the waterfall and send it careening down. You watch oddly mesmerized at it bounces along the path, constantly being immersed and spat out by the water. You don't know when you sat down and began meditating, only that you woke from your deep realization hours later.]]></story_1>
+        </sit_by_waterfall>
+        <old_shortcut>
+            <label>老旧捷径</label>
+            <label_done>已探索的捷径</label_done>
+            <tooltip><![CDATA[
+            在很长一段时间内，没有人来这令人沮丧的地方。<br>可以寻找到一些额外的草药。<br>除非你知道他们关心的事情，否则老人们会很痛苦。每1%已探索的捷径可提升1%与隐士交谈 获得的隐士知识。<br>解锁于 20% 森林探索。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>1% 已探索的捷径:</b>⮀ You continued on with your trip and discovered a small and worn path leading off the main thoroughfare. You wondered what it was and decided to explore.]]></story_1>
+            <story_2><![CDATA[<b>10% 已探索的捷径:</b>⮀ You're mildly surprised to discover a seemingly sprawling network of interconnected paths that seem to get almost everywhere within the forest.]]></story_2>
+            <story_3><![CDATA[<b>20% 已探索的捷径:</b>⮀ You stumble across a small clearing in the forest, racks of drying herbs and bubbling cauldrons litter the clearing. As soon as you step in, a hermit leaps from his hut yelling at you.]]></story_3>
+            <story_4><![CDATA[<b>40% 已探索的捷径:</b>⮀ You continue to explore the shortcuts, you're able to recognize where you are in the sprawling network with a glance. You're able to move freely around the forest.]]></story_4>
+            <story_5><![CDATA[<b>60% 已探索的捷径:</b>⮀ You've discovered another set of hidden shortcuts on the gloomy side of the forest, and set about exploring them, they seem less looked after than those on the other side, but are still serviceable.]]></story_5>
+            <story_6><![CDATA[<b>80% 已探索的捷径:</b>⮀ These old shortcuts are incredible, they almost seem to tell a story of when this forest was more habitable. You wonder why they were forgotten.]]></story_6>
+            <story_7><![CDATA[<b>100% 已探索的捷径:</b>⮀ You dust your hands and smile contently, you've done it. You've traveled every single path to completion. You could start at a completely random point and find your way out. That old hermit seems to like these paths.]]></story_7>
+        </old_shortcut>
+        <talk_to_hermit>
+            <label>与隐士交谈</label>
+            <label_done>隐士知识</label_done>
+            <tooltip><![CDATA[
+            这个老人很高兴有一个倾听的耳朵，但愿他掌握了一些有用的知识。他最初是不信任你的，但是一旦你开始谈论这条路，他就会对你敞开心扉。<br>每1%的隐士知识可降低收集草药，实用魔术和 学习炼金的魔法消耗0.5%<br>解锁于 20% 已探索的捷径和 40 魔法技能。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>1% Hermit knowledge learned:</b>⮀ The Hermit is old, scraggly and surprisingly, not bald. Looks old as dirt. He doesn't know the name of the surrounding provinces, but knows the names of the provinces before the current ones.]]></story_1>
+            <story_2><![CDATA[<b>10% Hermit knowledge learned:</b>⮀ The old hermit is an absolute genius at using magic to speed things up and just in general make things quicker and easier. You have much information to wring from him. He doesn't tell you his name and insists you call him 'Old man', or 'Hermit'.]]></story_2>
+            <story_3><![CDATA[<b>20% Hermit knowledge learned:</b>⮀ He still hasn't told you his name and you've tried to worm it out of him over multiple loops. He just seems amused at your attempts. Either way, you're steadily wringing out more information from him.]]></story_3>
+            <story_4><![CDATA[<b>40% Hermit knowledge learned:</b>⮀ Apparently, the old man was here before this forest was a forest. He remembers the first seeds being sown. Just, what? How old would that even make him?]]></story_4>
+            <story_5><![CDATA[<b>60% Hermit knowledge learned:</b>⮀ You learn more about his tells, when to push and when not to. You've angered him and seen him joyful, made him laugh and cry. Reminisce on old memories and curse bitterly. You've almost figured him out. You still don't know his name.]]></story_5>
+            <story_6><![CDATA[<b>80% Hermit knowledge learned:</b>⮀ You've spent more time learning about this one man than you have most other things, you've come to see him almost as a familiar figure. With how much time you've spent with him, it's hard not to. You still don't know his name. One thing you do know is that he's been around a long time and has forgotten more about magic than you've learned.]]></story_6>
+            <story_7><![CDATA[<b>100% Hermit knowledge learned:</b>⮀ He finally told you his name. Gelt. He seemed almost knowing as he told you.]]></story_7>
+        </talk_to_hermit>
+        <practical_magic>
+            <label>实用魔术</label>
+            <tooltip><![CDATA[
+            这种简单的用法可以帮助你完成日常任务，真是天才。从隐士那里获得这些知识就像拔牙一样。<br>解锁于 20% 隐士知识和 50 魔法技能。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>1 Practical magic:</b>⮀ You pester the hermit about magic and how to use it to make things easier on yourself. It's surprisingly handy to be able to move things around without havin to be there, rather than smashing pots you can instead lift them or knock them off edges. Why open a lock when you can unlock a latch with Mage Hand, why walk over to the wardrobe if you can just fling it open and ransack it? Magic, but practical. You're a little astonished that not everyone does this.]]></story_1>
+        </practical_magic>
+        <learn_alchemy>
+            <label>学习炼金</label>
+            <tooltip><![CDATA[
+            你可以一边做些轻型治疗药水，一边听他的啜泣。<br>你开始思考导致循环时间的药水很复杂。<br>你需要自己提供原料，消耗10草药<br>获得炼金和魔法技能.<br>解锁于 40% 隐士知识和 60 魔法技能。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Alchemy learned:</b>⮀ You ask the hermit about potion's and are regaled of tales from his time as an apprentice, the mistakes he made and how one time, he managed to douse his masters beard with potion that would wildly change the color of it every minute, for a full year his master had to deal with a beard that was either glowing white like pure fallen snow or was more fit to be in the sky after rain. You take notes as the hermit speaks.]]></story_1>
+            <story_2><![CDATA[<b>25 Alchemy:</b>⮀ You sit by the fire inside the hermits clearing, fire dancing merrily away as he feeds magical herbs to the fire while throwing precise amounts into the large pot boiling above it. The stories he tells of his youth and learning alchemy under his master make you howl with laughter and provoke deep thoughtful silences.]]></story_2>
+            <story_3><![CDATA[<b>50 Alchemy:</b>⮀ As you learn more and more about alchemy, the potion that caused you to start looping begins to seem more and more hideously complex. Something as simple as your reputation can effect the outcome of a potion. It's more an art that science or anything even easily conveyed really.]]></story_3>
+        </learn_alchemy>
+        <brew_potions>
+            <label>酿造药水</label>
+            <tooltip><![CDATA[
+            看这些气泡和烧瓶，药水和魔法<br>需要至少5点声誉，否则他不会让你靠近他的东西。<br>花费10草药制造一瓶药水，然后你可以在下一个城镇卖出它们<br>获得炼金和 魔法技能。<br>解锁于10点炼金术。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Potion brewed:</b>⮀ The old man happily lets you use his apparatus to brew your own potions after much haranguing about your technique and the fact that you're not buying ingredients off him, he leaves you to it. His workstations are old, well used and obviously well looked after. The only fault you can lay at their feet is that the measuring system used is older than dirt. Fits you suppose.]]></story_1>
+            <story_2><![CDATA[<b>Action failed with low reputation:</b>⮀ The hermit refuses to allow you near his workstations and potion brewing equipment no matter how much you ask and offer to pay. He tells you that you don't have a good enough karma for him to even be willing to risk you using his workstations and potion benches.]]></story_2>
+            <story_3><![CDATA[<b>Action failed with negative reputation:</b>⮀ The hermit shoos you away from his clearing when you even make a mention of using his potion supplies, something about not wanting you to taint his equipment with your karma.]]></story_3>
+        </brew_potions>
+        <train_dexterity>
+            <label>敏捷训练</label>
+            <tooltip><![CDATA[
+            有很多不错的选择。其乐无穷。<br>拥有4倍的经验和天赋速度，每次循环中只能完成 <div id='trainingLimitDex'></div> 次。<br>解锁于 60% 森林探索.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Dexterity trained:</b>⮀ You find rocks spaced intermittently in an open clearing. Your best guess is that they were set up as a training field for some mercenary group that had passed by. Either way, it's fun to bounce from one rock to another parrying invisible enemies and fighting the air.]]></story_1>
+        </train_dexterity>
+        <train_speed>
+            <label>速度训练</label>
+            <tooltip><![CDATA[
+            森林奔跑真是太棒了。 当你不断突破极限时，你会觉得自己学到很多东西。<br>拥有4倍的经验和天赋速度，每次循环中只能完成 <div id='trainingLimitSpd'></div> 次。<br>解锁于 80% 森林探索.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Speed trained:</b>⮀ Sprinting through the forest is an exhilarating experience. The vines whip past your head, the roots beneath your feet. The leaves whip past your face and the breeze blows hard enough against your ears that you hear nothing but. You feel at one with the forest as you chase a finch around, up and down and even under trees at times. Through dilapidated trunks and wooden labyrinths.]]></story_1>
+        </train_speed>
+        <follow_flowers>
+            <label>循迹花朵</label>
+            <label_done>花朵循迹进度</label_done>
+            <tooltip><![CDATA[
+            你找到了一条奇特的异域花朵线索，为什么不看看它的去向。你可以在这条路上找到更多草药。<br>拥有眼镜时获得两倍探索速度。<br>解锁于 50% 森林探索.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>1% 花朵循迹进度:</b>⮀ You stumble across a small lane of flowers that are obviously planted by hand. You decide to follow it.]]></story_1>
+            <story_2><![CDATA[<b>10% 花朵循迹进度:</b>⮀ The planted flowers seem almost sprawling, threading to and fro across the forest.]]></story_2>
+            <story_3><![CDATA[<b>20% 花朵循迹进度:</b>⮀ The flowers led you to places in the forest that you hadn't been, you discovered a thicket that was overflowing with mana, but you would need to experiment to figure out how to draw the mana out.]]></story_3>
+            <story_4><![CDATA[<b>40% 花朵循迹进度:</b>⮀ The flowers continued to follow their unseen path, but you were starting to notice a pattern.]]></story_4>
+            <story_5><![CDATA[<b>60% 花朵循迹进度:</b>⮀ There were strange plants aplenty to be found along the flower path, and you had noticed that some had medicinal properties, you remembered from when you were young, the smell unmistakable.]]></story_5>
+            <story_6><![CDATA[<b>80% 花朵循迹进度:</b>⮀ The flower path was circuitous, circling around the darker side of the forest in patterns that you were starting to map out mentally.]]></story_6>
+            <story_7><![CDATA[<b>100% 花朵循迹进度:</b>⮀ The patterns were strangely geometric, and you had an inkling that the flower path had some sinister beginnings. Regardless, you'd explored the entire path. You were right too, it never did stray from the darker side of the forest.]]></story_7>
+        </follow_flowers>
+        <bird_watching>
+            <label>观鸟</label>
+            <tooltip><![CDATA[
+            在花径深处，似乎有各种各样的鸟儿飞来飞去。也许你可以培养一个新的爱好。<br>需要眼镜。<br>拥有4倍的经验和天赋速度，每次循环中只能完成 <div id='trainingLimitPer'></div> 次。<br>解锁于 80% 花朵循迹进度.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Birds watched:</b>⮀ You spot a colorful bird and attempt to follow it with your eyes, you fail. You try again and again until you can reliable pick out fast moving birds and animals with pinpoint precision. It's also strangely relaxing to watch birds congregate together, listening to the bird-call and watching them interact. Its fast, frenetic and savage at times, but that's nature.]]></story_1>
+        </bird_watching>
+        <clear_thicket>
+            <label>清除灌木</label>
+            <label_done>灌丛探索</label_done>
+            <tooltip><![CDATA[
+            花旁的小路把你引向灌木丛，似乎无处可去。也许这是一些奇怪的魔术。你可以清除灌木丛，以找到更多的野外法力。<br>解锁于 20% 花朵循迹进度.
+        ]]></tooltip>
+            <story_1><![CDATA[<b>1% 灌丛探索:</b>⮀ You trek to a thicket you found while following the flower path and decide to explore it. Maybe you'll find some more mana. It's not like it belongs to anyone.]]></story_1>
+            <story_2><![CDATA[<b>10% 灌丛探索:</b>⮀ You've found more of these secluded thickets off the flower path than you thought you would, and you have a sense that there are many more that you haven't found yet.]]></story_2>
+            <story_3><![CDATA[<b>20% 灌丛探索:</b>⮀ The mana in these thickets is rich and helpful, extending your time in the loop to let you search for more and more. The break from people is a nice break from normal too.]]></story_3>
+            <story_4><![CDATA[<b>40% 灌丛探索:</b>⮀ You've thoroughly explored the darker side of the forest, and while resting close to the path that cut the forest in half, you stumbled across another thicket in the lighter side of the forest.]]></story_4>
+            <story_5><![CDATA[<b>60% 灌丛探索:</b>⮀ You continued to stroll around to all the thickets you had found. They were innumerable at this point, just endless tangled tiny clearings and glades.]]></story_5>
+            <story_6><![CDATA[<b>80% 灌丛探索:</b>⮀ Surely by now you're getting close to finding them all? Every time you think you're getting close you find another section of the forest that had clearings. How did you not find these earlier?]]></story_6>
+            <story_7><![CDATA[<b>100% 灌丛探索:</b>⮀ You stumbled across another thicket and throw your hands up. You would question how you missed all these extra thickets but you don't really care at this point. You've gotten disturbingly good at ripping nature to pieces in search of more mana.]]></story_7>
+        </clear_thicket>
+        <talk_to_witch>
+            <label>与女巫交谈</label>
+            <label_done>巫术知识</label_done>
+            <tooltip><![CDATA[
+            与女巫交谈以了解她的黑暗艺术秘密。<br>解锁于 60% 灌丛探索和 80 魔法技能.<br>每1％的巫术知识，可将黑暗魔法和黑暗仪式的魔法消耗降低0.5％。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>1% 巫术知识:</b>⮀ You stumble across a small crooked hut and as you approach the boundary, a small slip of a woman step outs. She's stunning and you're immediately on guard. The area pulses with a heady hum of magic that sends shivers down your spine. She introduces herself as Evis.]]></story_1>
+            <story_2><![CDATA[<b>10% 巫术知识:</b>⮀ The Witch as you taken to referring to her as, seeing as she changes her name every time she introduces herself to you, is a veritable font of magical knowledge, of how to dominate the mana itself and make more from less.]]></story_2>
+            <story_3><![CDATA[<b>20% 巫术知识:</b>⮀ You continue to hunt down the Witch and drag more information out of her, the magic she teaches you is cruel, callous even. The witch is surprisingly personable for what you would consider a stereotypical 'Wicked Witch'.]]></story_3>
+            <story_4><![CDATA[<b>40% 巫术知识:</b>⮀ You start to learn more about the witches daily routine as you spend more and more time around her, the relationship you manage to cultivate with her at the start of each loop grows more familiar with each repetition. She seems to be slightly more interested each time you reveal your knowledge of dark magic.]]></story_4>
+            <story_5><![CDATA[<b>50% 巫术知识:</b>⮀ You had apparently impressed her enough this time that she took you to a clearing she had found, and explained to you a ritual that would give you a boost, permanently through any circumstances by calling upon the dark gods. The catch she explained, with ill concealed glee, was that you would need souls to sacrifice if you wanted to do this ritual.]]></story_5>
+            <story_6><![CDATA[<b>60% 巫术知识:</b>⮀ As you learn more and more about the witch and her varied names, one thing starts to become glaringly obvious. The Witch and The Hermit know one another. If her irritable grumbling about the old fool and his idiotic desires were anything to go by. You get the feeling that their relationship is complex.]]></story_6>
+            <story_7><![CDATA[<b>80% 巫术知识:</b>⮀ The witch is struck with a strange sense of melancholy one loop and you have no idea why, but the witch is strangely open with information and you manage to pry out more of the relationship between her and the Hermit. They were lovers once, and to your surprise, she used to be the one whom nature adores. She shuts up quickly after letting that slip. You're all the more determined to pry it out of her though.]]></story_7>
+            <story_8><![CDATA[<b>100% 巫术知识:</b>⮀ Somehow she seems to sense something about you this loop, and she tells you her name, and its the name she gives for every loop after. Trisha. You manage to pry most of her relationship with the hermit from her. They were lovers once, this you knew, but what you didn't was that she was of nobility and he a common vagabond. She fell for him and him for her, it was a love for the ages she tells you while drunk from the wine you brought along with you. He wanted to run away with her and she agreed, too love struck to question why. He was running from deals he had made and bargains he had forsaken, his glib tounge landing him in trouble of the otherworldly nature. Trisha seems frustrated with her youth's naivety as she tells you how she was made a scapegoat for his failings and forfeits in his deals and bargains. How she was essentially sold to the dark gods as his forfeit. When you ask what she did in return, all Trisha does is smile with dark satisfaction, the fire flaring briefly.]]></story_8>
+        </talk_to_witch>
+        <dark_magic>
+            <label>黑暗魔法</label>
+            <tooltip><![CDATA[
+            拥抱黑暗艺术以更有效地获得法力。但代价是什么？<br>增加1点负面声誉。<br>需要0或更低的声誉。<br>解锁于 20% 巫术知识和 100 魔法技能。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>1 黑暗魔法:</b>⮀ You ask the witch for more information on dark magic and then during the conversation slowly reveal your interest in the subject and float the offer that you would be willing to trade if she would teach you the beginning steps. She smirks deviously and agrees to the deal.]]></story_1>
+            <story_2><![CDATA[<b>25 黑暗魔法:</b>⮀ The witch demands more and more of you and you slowly figure out ways of broaching the subject with her that doesn't startle her enough that she stops talking to you or just flat out shuts you down. The magic she begins to teach is brutal, ominous and forceful. You do not work with or help, you take and dominate.]]></story_2>
+            <story_3><![CDATA[<b>50 黑暗魔法:</b>⮀ The dark magic she teaches seems to veer more to the side of ritualistic sacrifice and communion with the dark gods, she tells you when you ask that its because she can't really teach you too much more unless you have a darker being backing you as her mana isn't inherent but a gift from the darker divine powers. She teaches you of a ritual that you can use to summon the dark gods and strike a bargain. She warns that you'll need souls as payment.]]></story_3>
+        </dark_magic>
+        <dark_ritual>
+            <label>黑暗仪式</label>
+            <label_done>Completed</label_done>
+            <tooltip><![CDATA[
+            牺牲越来越多的灵魂之石给黑暗之神，给予初学者的所有行动永久速度10%的提升。<br>每消耗1点法力获得 (黑暗魔法技能) * (1 + 巫术知识 / 100) * (1 + 主要属性 / 100) * (初始法力消耗 / 实际法力消耗) 进度点数。<br>要求声望为-5或以下。<br>只能进行1次黑暗仪式行动。<br>解锁于 50% 巫术知识和 50 黑暗魔法。<br>献祭 (50 * (仪式完成次数+1)) 灵魂石。 目前需要献祭
+        ]]></tooltip>
+            <tooltip2><![CDATA[
+             灵魂石。
+        ]]></tooltip2>
+            <segment_names>
+                <name>Clear the Area</name>
+                <name>Prepare the Altar</name>
+                <name>Summon the Dark Gods</name>
+            </segment_names>
+            <story_1><![CDATA[<b>3rd ritual segment reached:</b>⮀ Knowing what the ritual was and how large a space you would need, you were mildly surprised to find a clearing large enough in the forest. Well, the clearing itself wasn't really large enough on its own. It was a dense cluster of clearings that you've taken mana from that you could easily clear out to make a ritual space. Preparing the altar is surprisingly tame, all said and done. Stone and wood comprise most of the altar and the rest you brought with you when you made this plan. In the end the altar you build is only small, a communion point instead of a summoning. Holding a heart from nearby deer, you pierce it and begin to chant ritualistic words of power. The clearing grows dark and the forest quietens, nary a sound is heard apart from the drip drip drip of the blood from the pierced heart in your hand. The blood you've spilled on the altar begins to blacken and swirl without outside force and eventually forms into a small face, disgusting to look at but enough to communicate through.]]></story_1>
+            <story_2><![CDATA[<b>Ritual completed:</b>⮀ You commune with the dark gods long past the point that the blood has faded. The deal is struck thusly: time itself will move faster for you only in select areas, and you will pay a cost in souls. The dark god you commune with seems almost surprised as you immediately offer up some of the soulstones that you have.]]></story_2>
+        </dark_ritual>
+        <continue_on>
+            <label>继续前进</label>
+            <tooltip><![CDATA[
+            继续步行到下一个城镇，商业区<br>每%老旧捷径进度降低60点法力需求。
+        ]]></tooltip>
+            <story_1><![CDATA[<b>Traveled to the third zone:</b>⮀ You sigh gustily to yourself, you've done all you cared to do here and there was nothing left to do really, time to move on and out of the boonies and into civilized territory. Laws, taxes and bribes. You were almost looking forward to it, given how long you had been out in the country for at this point.]]></story_1>
+        </continue_on>
+        <!--town 3-->
+        <explore_city>
+            <label>探索城市</label>
+            <label_done>城市探索</label_done>
+            <tooltip><![CDATA[
+            每个人都很忙，有很多事情要做。<br>拥有眼镜时获得两倍探索速度。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </explore_city>
+        <gamble>
+            <label>赌钱</label>
+            <label_done>被骗的呆子</label_done>
+            <info_text1>剩余呆子数量</info_text1>
+            <info_text2>总计呆子数量</info_text2>
+            <info_text3>需要检查是否为呆子的剩余赌徒</info_text3>
+            <tooltip><![CDATA[
+            这些纸牌的出现每次循环中仍然不同。<br>拥有2倍的经验和天赋速度<br>花费20黄金和1声誉<br>需要-6点以上的声誉<br>你每赌10次可以找到一个呆子，并赢得60黄金<br>解锁于 10% 城市探索.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </gamble>
+        <get_drunk>
+            <label>喝酒</label>
+            <label_done>探听传言</label_done>
+            <tooltip><![CDATA[
+            有时你只需要喝一杯。<br>需要-4点以上的声誉<br>拥有3倍的经验和天赋速度<br>消耗 1 声誉。<br>解锁于 20% 城市探索.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </get_drunk>
+        <purchase_mana>
+            <label>购买法力</label>
+            <tooltip><![CDATA[
+            1 黄金 = 50 法力. 一次性购买你能买到的所有法力.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </purchase_mana>
+        <sell_potions>
+            <label>卖出药水</label>
+            <tooltip><![CDATA[
+            药水价值的黄金与炼金术等级相同，不过需要一些时间寻找买家。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </sell_potions>
+        <adventure_guild>
+            <label>冒险公会</label>
+            <label_done>敬仰</label_done>
+            <tooltip><![CDATA[
+            一站式服务满足你的所有冒险需求。<br>参加他们的测试并获得评级！<br>你每次循环只能加入1个公会，并且只能尝试一次。<br>每个评级可获得200法力<br>每消耗1点法力获得 ((魔法技能)/2 + (自身战斗)) * (1 + 主要属性 / 100) * √(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点数。<br>解锁于 20% 探听传言.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </adventure_guild>
+        <gather_team>
+            <label>组织团队</label>
+            <tooltip><![CDATA[
+            你不必一切都独自面对。<br>最多5个团队成员。<br>花费 <div id='teamCost'></div>
+            黄金, 每已有一个队友行动花费额外增加100黄金。<br>每个队友增加 (冒险公会乘数) * (战斗技能 / 2) 到你的 团队战斗.<br>需要加入冒险公会。<br>拥有3倍的经验和天赋速度<br>解锁于 20% 探听传言.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </gather_team>
+        <large_dungeon>
+            <label>大型地牢</label>
+            <label_done>已探索</label_done>
+            <label_complete>完成</label_complete>
+            <label_part>大型地牢</label_part>
+            <tooltip><![CDATA[
+            与你的团队一起，完成艰巨的冒险任务，这是独自一人无法完成的。<br>每消耗1点法力获得 (魔法技能 + 团队战斗) * (1 + 主要属性 / 100) * √(1 + 地牢完成次数 / 200) * (初始法力消耗 / 实际法力消耗) 进度点数。<br>需要有至少一个队友<br>解锁于 20% 探听传言.<br>每次完成获得10灵魂石 - 查看计数以获得更多信息.
+        ]]></tooltip>
+            <completed_tooltip><![CDATA[
+            每个灵魂石提升一个随机属性的经验获得(1+(灵魂石)^.8/30).<br>每层地牢都有10灵魂石, 当你获得时, 你下次获得灵魂石的概率下降2%。<br>每消耗1点法力，灵魂石获得概率恢复 0.00001%。<br>
+        ]]></completed_tooltip>
+            <chance_label>几率</chance_label>
+            <last_stat_label>上次属性</last_stat_label>
+            <segment_names>
+                <name>团队集合</name>
+                <name>到达入口</name>
+                <name>进攻门卫</name>
+                <name>争夺战利品</name>
+                <name>躲避陷阱</name>
+                <name>友军之围</name>
+                <name>进攻BOSS</name>
+            </segment_names>
+            <!--TODO: give this action story-->
+        </large_dungeon>
+        <crafting_guild>
+            <label>工艺公会</label>
+            <label_done>令人动容的美</label_done>
+            <tooltip><![CDATA[
+            学会动手建造大型建筑物。<br>参加他们的测试并获得评级！<br>你每次循环只能加入1个公会，并且只能尝试一次。<br>每个阶段可获得10黄金<br>每消耗1点法力获得 ((魔法技能)/2 + (工艺技能)) * (1 + 主要属性 / 100) * √(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点数。<br>解锁于 30% 探听传言.<br>在每个阶段完成时获得工艺经验，而不是行动完成时。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </crafting_guild>
+        <craft_armor>
+            <label>制作装甲</label>
+            <tooltip><![CDATA[
+            通过努力将皮革变成盔甲。<br>每个装甲可获得 (20% * 工艺公会乘数) 到 自身战斗。<br>消耗2兽皮<br>解锁于 30% 探听传言.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </craft_armor>
+        <apprentice>
+            <label>学徒</label>
+            <label_done>学徒期</label_done>
+            <tooltip><![CDATA[
+            你认为了解更多有关建筑的知识将有所帮助。 你使用工艺协会的许可证来啃书本。<br>公会乘数越高，运行速度越快。<br>根据进度0-100%给予10-20工艺经验值<br>需要工艺公会。<br>解锁于 40% 探听传言。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </apprentice>
+        <mason>
+            <label>泥瓦匠</label>
+            <label_done>建造的建筑物</label_done>
+            <tooltip><![CDATA[
+            你已经完成了你的学徒和理论知识-现在你需要动手了。<br>公会乘数越高，运行速度越快。<br>需要工艺公会。<br>根据进度0-100%给予20-40工艺经验值<br>解锁于 60% 探听传言 和 100% 学徒期。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </mason>
+        <architect>
+            <label>建筑师</label>
+            <label_done>计划项目</label_done>
+            <tooltip><![CDATA[
+            既然你知道事情是如何运作的，那么最好学会如何设计它们。<br>公会乘数越高，运行速度越快。<br>需要工艺公会。<br>根据进度0-100%给予40-80工艺经验值<br>解锁于 80% 探听传言 和 100% 建造的建筑物。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </architect>
+        <read_books>
+            <label>读书</label>
+            <tooltip><![CDATA[
+            有一个图书馆！你一直喜欢读书。<br>发现新的世界和视角，从小说人物身上获得灵感，并对变得更强的愿望产生共鸣。<br>需要眼镜。<br>拥有4倍的经验和天赋速度，每次循环中只能完成 <div id='trainingLimitInt'></div> 次。<br>解锁于 50% 城市探索。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </read_books>
+        <buy_pickaxe>
+            <label>买镐</label>
+            <tooltip><![CDATA[
+            让卖镐的人跟你说话是个棘手的任务，但至少他会在说服你之后以200金币的价格卖给你。<br>影响使用镐图标的任何操作。<br>只能有1个购买镐动作。<br>解锁于 90% 城市探索。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </buy_pickaxe>
+        <start_trek>
+            <label>开始跋涉</label>
+            <tooltip><![CDATA[
+            开始向奥林匹斯山顶跋涉<br>解锁于 60% 城市探索。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </start_trek>
+        <!--town 4-->
+        <climb_mountain>
+            <label>爬山</label>
+            <label_done>山峰探索</label_done>
+            <tooltip><![CDATA[
+            穿越山峰将很困难，但是你可以将镐用作临时攀爬工具，以帮助你四处走走。<br>有镐时获得两倍探索进度。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </climb_mountain>
+        <mana_geyser>
+            <label>法力喷泉</label>
+            <label_done>检查弱点</label_done>
+            <info_text1>剩余有喷泉的地点</info_text1>
+            <info_text2>总共有喷泉的地点</info_text2>
+            <info_text3>需要检查是否有喷泉的地点</info_text3>
+            <tooltip><![CDATA[
+            在地面上寻找弱点，以期揭示出大量的法力喷泉。<br>有喷泉的地点拥有5000法力<br>每100个弱点有一个是法力喷泉<br>需要镐。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </mana_geyser>
+        <decipher_runes>
+            <label>解密符文</label>
+            <label_done>已破译的符文符号</label_done>
+            <tooltip><![CDATA[
+            山周围风化的墓碑上有许多不同的符文标记，也许你可以从中收集一些知识。<br>每1%解密符文降低时间魔法和火焰魔法的法力消耗0.5%。<br>拥有眼镜时获得两倍探索速度。<br>解锁于 20% 山峰探索.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </decipher_runes>
+        <chronomancy>
+            <label>时间魔法</label>
+            <tooltip><![CDATA[
+            控制时间似乎是个不错的主意，值得庆幸的是，这里的符文包含了许多有关时间魔法技巧的信息。<br>解锁于 30% 已破译的符文符号和 150 魔法技能.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </chronomancy>
+        <looping_potion>
+            <label>循环药水</label>
+            <tooltip><![CDATA[
+            利用你对炼金术的适应和时间的天赋，你设法重现了使你陷入困境的魔药！ 它无法治愈你，但也许你可以找到其他用途。(现在还没有用途)<br>需要200草药<br>解锁于 60 炼金术 和 100 时间魔法.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </looping_potion>
+        <pyromancy>
+            <label>火焰魔法</label>
+            <tooltip><![CDATA[
+            发挥狂热的力量和狂暴的火光闪烁的火焰的力量，可以帮助你进行战斗。 是的，符文也包含一些与此有关的东西。 <br>解锁于 60% 已破译的符文符号和 200 魔法技能.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </pyromancy>
+        <explore_cavern>
+            <label>探索洞穴</label>
+            <label_done>洞穴探索</label_done>
+            <tooltip><![CDATA[
+            探索山下广阔而曲折的洞穴，谁知道你在那儿会发现什么奇观（或恐怖）。<br>解锁于 40% 山峰探索。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </explore_cavern>
+        <mine_soulstones>
+            <label>开采灵魂石</label>
+            <label_done>闪光点检查</label_done>
+            <info_text1>Spots with soulstones left</info_text1>
+            <info_text2>Spots with soulstones total</info_text2>
+            <info_text3>Spots to check for soulstones</info_text3>
+            <tooltip><![CDATA[
+            提取堆积在巨大地下洞穴中隧道壁上的灵魂石。<br>每10个闪光点就有一个灵魂石。<br>需要镐。<br>解锁于 20% 洞穴探索。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </mine_soulstones>
+        <hunt_trolls>
+            <label>狩猎巨魔</label>
+            <label_done>残害</label_done>
+            <tooltip><![CDATA[
+            洞穴里到处都是巨魔，但值得庆幸的是，它们与您相遇时似乎很友善。 但是，您可以使用一些巨魔的血。<br>每消耗1点法力获得 (自身战斗) * (1 + 主要属性 / 100) * √(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点数。<br>解锁于 50% 洞穴探索。<br>给予每个巨魔的战斗经验，而不是在行动完成后。
+        ]]></tooltip>
+            <chance_label>Chance</chance_label>
+            <last_stat_label>Last Stat</last_stat_label>
+            <segment_names>
+                <name>Find a Hiding Spot</name>
+                <name>Scream Very Loudly to Lure Out the Troll</name>
+                <name>Pounce on the Troll</name>
+                <name>Fight the Troll</name>
+                <name>Drain the Troll's Blood</name>
+            </segment_names>
+            <!--TODO: give this action story-->
+        </hunt_trolls>
+        <check_walls>
+            <label>检查墙壁</label>
+            <label_done>虚幻墙</label_done>
+            <tooltip><![CDATA[
+            现在你知道了洞穴的来龙去脉，你开始注意到墙壁上某些虚幻的地方！他们身后似乎藏着各种各样的好东西。<br>解锁于 80% 洞穴探索。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </check_walls>
+        <take_artifacts>
+            <label>拿走文物</label>
+            <label_done>拿走的文物</label_done>
+            <info_text1>Alcoves with artifacts left</info_text1>
+            <info_text2>Alcoves with artifacts total</info_text2>
+            <info_text3>Alcoves to check for artifacts</info_text3>
+            <tooltip><![CDATA[
+            在一些虚幻的墙壁后面，有各种各样的文物，似乎属于某种古代文明。或者至少如果有人来找他们你会这么说。(这些现在什么也做不了)<br>每25个壁龛里都有一件文物。<br>解锁于 5% 虚幻墙。
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </take_artifacts>
+        <imbue_mind>
+            <label>灌输思想</label>
+            <label_done>Completed</label_done>
+            <tooltip><![CDATA[
+            在许多虚幻的墙壁之一的深处，您发现了一个充满液体的发光小湖。 当您的灵魂石靠近时，它们似乎会发光。 您似乎可以将它们用作链接到您的思想，但是此过程需要大量的魔法，一旦完成，它将销毁它们。 每项投入都会使训练上限增加1。<br>每消耗1点法力获得 (魔法技能) * (1 + 主要属性 / 100) * (初始法力消耗 / 实际法力消耗) 进度点数。<br>只能有一个灌输心灵的动作。<br>解锁于 70% 虚幻墙 和 300 魔法。<br>献祭 (20 * (灌输次数+1)) 灵魂石。 目前需要献祭 
+        ]]></tooltip>
+            <tooltip2><![CDATA[
+             灵魂石。
+        ]]></tooltip2>
+            <segment_names>
+                <name>Submerge the Soulstones</name>
+                <name>Arrange the Soulstones</name>
+                <name>Absorb Knowledge</name>
+            </segment_names>
+            <!--TODO: give this action story-->
+        </imbue_mind>
+        <face_judgement>
+            <label>面对审判</label>
+            <tooltip><![CDATA[
+            面对众神的审判。如果你的名声是50或以上，你将接受他们的好感，并获准通过瓦尔哈拉。如果你的声誉是-50或以下，你将被投到阴影领域和扔回你的旅程的开始。<br>解锁于 100% 山峰探索. (这个动作现在没用)
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </face_judgement>
+        <!--town 5-->
+        <guided_tour>
+            <label>Guided Tour</label>
+            <label_done>Tour Routes Followed</label_done>
+            <tooltip><![CDATA[
+            The city doesn't take too kindly to visitors snooping around, so you'll have to take all their tours to scope it out instead.<br>Costs 10 gold.<br>2x progress with glasses.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </guided_tour>
+        <canvass>
+            <label>Canvass</label>
+            <label_done>Houses Canvassed</label_done>
+            <tooltip><![CDATA[
+            The city has a local charity that's looking for volunteers to canvass around for potential benefactors. Maybe if you know the information of some of said people, it could be helpful.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </canvass>
+        <donate>
+            <label>Donate</label>
+            <tooltip><![CDATA[
+            You can donate to the charity yourself if you'd like.<br>Costs 20 gold.<br>获得 1 声誉.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </donate>
+        <accept_donations>
+            <label>Accept Donations</label>
+            <label_done>Donations Accepted</label_done>
+            <info_text1>Meaningful donations left</info_text1>
+            <info_text2>Meaningful donations total</info_text2>
+            <info_text3>Donations to check for value</info_text3>
+            <tooltip><![CDATA[
+            After doing some canvassing for the local charity, you're now able to accept some donations on their behalf, since you know the routine.<br>消耗 1 声誉。<br>Meaningful donations are worth 20 gold each.<br>Every 5 donations is worth a meaningful amount. 
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </accept_donations>
+        <mercantilism>
+            <label>Mercantilism</label>
+            <tooltip><![CDATA[
+            Practice your merchandising skills, which are sorely lacking considering how poor of a deal you're getting from those mana merchants.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </mercantilism>
+        <wizard_college>
+            <label>Wizard College</label>
+            <label_done>Spontaneously Combusted From Wonder</label_done>
+            <tooltip><![CDATA[
+            The wizard college is the finest school in all of the realms, you're lucky to be afforded a chance to get in. Although, it will cost you a small fortune in tuition.<br>Take their tests and get a grade!<br>Can only have 1 Wizard College action.<br>Costs 500 gold.<br>每消耗1点法力获得 (all schools of 魔法技能s) * (1 + 主要属性 / 100) * √(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点数。<br>解锁于 ???
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </wizard_college>
+        <restoration>
+            <label>Restoration</label>
+            <tooltip><![CDATA[
+            You've gone all this way without learning how to heal people, or even yourself. You should probably get around to learning that. Mana cost is reduced by Wizard College Grade.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </restoration>
+        <spatiomancy>
+            <label>Spatiomancy</label>
+            <tooltip><![CDATA[
+            At a base level, this is the art of manipulating matter. At a high level, well, this is that but more powerful. Being able to manipulate space itself will allow you to create more items for certain limited actions. Mana cost is reduced by Wizard College Grade.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </spatiomancy>
+        <great_feast>
+            <label>Great Feast</label>
+            <label_done>Completed</label_done>
+            <tooltip><![CDATA[
+            You realize now that you've forgotten the joy of food, after having gone for so "long" without needing to eat anything. It's about time for a feast of grand proportions. Unfortunately, all the catering services here only accepts payments in soulstones.<br>每消耗1点法力获得 (practical 魔法技能) * (1 + 主要属性 / 100) * (初始法力消耗 / 实际法力消耗) 进度点数。<br>Can only have 1 Great Feast action.<br>Unlocked with ???<br>Sacrifices (5,000 * (feasts+1)) soulstones. Currently sacrificing 
+        ]]></tooltip>
+            <tooltip2><![CDATA[
+             soulstones.
+        ]]></tooltip2>
+            <segment_names>
+                <name>Explain Your Order</name>
+                <name>Give Them Your Information</name>
+                <name>Verify Your Identity</name>
+                <name>Confirm Your Address</name>
+            </segment_names>
+            <!--TODO: give this action story-->
+        </great_feast>
+        <fall_from_grace>
+            <label>Fall From Grace</label>
+            <tooltip><![CDATA[
+            Looks like the only way out of this place is to make them dislike you enough to kick you out. Some moderate vandalism will probably do the job. You'll be cast into the shadow realm and thrown back to the beginning of your journey, but at least you'll go out with a bang!
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </fall_from_grace>
+        <!--town 6-->
+        <raise_zombie>
+            <label>Raise Zombie</label>
+            <tooltip><![CDATA[
+            Upon stumbling by the local cemetery, you realize that those numerous tombstones could perhaps benefit you in a meaningful way. With your knowledge of dark magic, and a hint of troll's blood, you might just be able to raise a zombie of your very own!<br>Costs 1 blood.<br>Each zombie adds (dark magic / 2) to your 团队战斗.<br>解锁于 ???.
+        ]]></tooltip>
+            <!--TODO: give this action story-->
+        </raise_zombie>
+        <the_spire>
+            <label>The Spire</label>
+            <label_done>Looted</label_done>
+            <label_complete>Completed</label_complete>
+            <label_part>The Spire</label_part>
+            <tooltip><![CDATA[
+            Standing tall in the dead center of the town is the towering spire. Surrounded by a storm, and almost emanating gloom. This is surely your greatest task yet.<br>每消耗1点法力获得 (团队战斗) * (1 + 主要属性 / 100) * √(1 + times floor completed / 200) * (初始法力消耗 / 实际法力消耗) 进度点数。<br>Progress scaling per floor is reduced by 0.1x per pylon disabled.<br>解锁于 20% 探听传言.<br>Gives 50 soulstones per completion - hover over Looted for info.
+        ]]></tooltip>
+            <completed_tooltip><![CDATA[
+            Each soulstone improves a random stat's exp gain by (1+(soulstones)^.8/30).<br>Each floor has 10 soulstones that, when received, reduces the chance you'll get the next one by 2%.<br>Chance to receive a soulstone recovers per floor at 0.00001% per mana.<br>
+        ]]></completed_tooltip>
+            <chance_label>Chance</chance_label>
+            <last_stat_label>Last Stat</last_stat_label>
+            <segment_names>
+                <name>Locate Entrance</name>
+                <name>Navigate Door Maze</name>
+                <name>Slay Spectres</name>
+                <name>Escape Evaporating Tunnel</name>
+                <name>Fend Off Spider Ambush</name>
+                <name>Avoid Explosive Runes</name>
+                <name>Disable Miniature Pylons</name>
+                <name>Fight Dark Amalgamation</name>
+                <name>Cleanse Floor</name>
+            </segment_names>
+            <!--TODO: give this action story-->
+        </the_spire>
+    </actions>
+    <spells>
+        <title>Spells</title>
+    </spells>
+</body>
